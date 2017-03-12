@@ -1,0 +1,9 @@
+https://docs.oracle.com/javase/tutorial/essential/exceptions/QandE/questions.html
+
+
+
+1.
+
+try {
+} finally {
+}

@@ -1,0 +1,64 @@
+--------------Learning the Java Language
+
+https://docs.oracle.com/javase/tutorial/java/
+
+--------------this
+
+https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html
+
+'this': a reference to the current object
+
+
+--------------packages
+
+https://docs.oracle.com/javase/tutorial/java/package/index.html
+
+
+--------------interfaces and inheritance
+
+https://docs.oracle.com/javase/tutorial/java/IandI/index.html
+
+
+--------------classes and objects
+
+https://docs.oracle.com/javase/tutorial/java/javaOO/index.html
+
+
+--------------language basics
+
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html
+
+
+---------------Object-oriented programming concepts
+
+https://docs.oracle.com/javase/tutorial/java/concepts/index.html
+
+---------------I/O
+
+https://docs.oracle.com/javase/tutorial/essential/io/
+
+---------------catch
+
+https://docs.oracle.com/javase/tutorial/essential/exceptions/catch.html
+
+try {
+
+} catch (ExceptionType name) {
+
+} catch (ExceptionType name) {
+
+}
+
+---------------Package java.sql
+
+https://docs.oracle.com/javase/8/docs/api/java/sql/package-summary.html
+
+
+---------------JDBC Basics
+
+https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html
+
+---------------
+---------------
+---------------
+---------------
