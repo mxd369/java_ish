@@ -1,0 +1,16 @@
+===================PP 10.1
+===================PP 10.2
+===================PP 10.3
+===================PP 10.4
+
+11115999-1
+
+Program Plan:
+  Define the class InvalidDocumentCodeException to exception.
+  Read the string from the user
+  Check the valid string or not
+  Display output
+
+===================PP 10.5
+===================PP 10.6
+===================PP 10.7

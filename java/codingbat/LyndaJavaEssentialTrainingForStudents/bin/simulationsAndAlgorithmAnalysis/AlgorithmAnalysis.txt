@@ -1,0 +1,75 @@
+Algorithm Analysis
+
+  Compare algorithms based on computing resources
+  Consider two algorithms to determine which is better
+    Resources: consider the amount of space, or memory, an algorithm requires
+    Based on the amount of time
+	Execution time/running time of algorithm
+	measure the execution time using a benchmark analysis
+	track the actual time to compute its result
+
+	
+	Big-O Notation
+	  Relative representation of the algorithm complexity
+	    Relative comparison:
+	      You can't compare an algorithm to do arithmetic multiplication to an
+	      algorithm that sorts a list of integers.
+	      But a comparison between two algorithms to do arithmetic operations,
+	      maybe one does multiplication, and one does addition,
+	      will tell you something meaningful.
+	  Representation
+	    Reduces algorithm comparison to a single variable
+	    For example, sorting algorithms are typically compared based on comparison operations,
+	    comparing two nodes to determine their relative ordering.
+	    This assumes that comparison is expensive.
+	    
+	    if comparison is cheap, but swapping is expensive?
+	    It changes the comparison and the complexity.
+	    
+	  Complexity
+	    if it takes me one second to sort 10,000 elements,
+	    how long will it take me to sort 1,000,000?
+	    The complexity in this instance is a relative measure to something else.
+	    When trying to characterize an algorithm's efficiency in terms of execution time,
+	    independent of any particular program or computer,
+	    it is important to quantify the number of operations,
+	    or steps, that the algorithm will require.
+	    If each of these steps is considered to be a basic unit of computation,
+	    then the execution time for an algorithm can be expressed as the number of
+	    steps required to solve the problem.
+	    
+	  Deciding on an appropriate basic unit of computation
+	    can be a complicated problem, and will depend on how the algorithm is implemented.
+	    Order of magnitude is often called Big-O notation, where the O stands for order,
+	    and is written O(f(n)).
+	    It provides a useful approximation to the actual number of steps in the computation.
+	    Big-O specifically describes the worst-case scenario and can be used to describe the
+	    execution time required or the space used, for example, in memory or on disk, by an algorithm.
+	    
+	  Big-O specifically describes the worst-case scenario and can be used to describe the execution
+	  time required or the space used, in memory or on disk, of an algorithm.
+	  
+	  O(1)
+	  describes an algorithm that will always execute,
+	  in the same time or space, regardless of the size of the input data set
+	  
+	  O(N)
+	  describes an algorithm whose performance will grow linearly
+	  and in direct proportion to the size of the input data set.
+	  
+	  O(N^2)
+	  represents an algorithm whose performance is directly proportional to the
+	  square of the size of the input data set.
+	  This is common with algorithms that involve nested iterations over the data set.
+	  
+	  O(N^3)
+	  Deeper nested iterations will result
+	  
+	  O(N^4)
+	  Deeper nested iterations will result
+	  
+	  O(2^N)
+	  denotes an algorithm whose growth will double with each additional element in the input set. 
+	  
+	  
+	   

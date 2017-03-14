@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;gui.CelsuisConverterGUI.java&apos; to &apos;CelsiusConverterGUI.java&apos;&#x0A;- Original project: &apos;docsoracle&apos;&#x0A;- Original element: &apos;gui.CelsuisConverterGUI.java&apos;&#x0A;- Renamed element: &apos;gui.CelsiusConverterGUI.java&apos;" description="Rename compilation unit &apos;CelsuisConverterGUI.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;gui{CelsuisConverterGUI.java" name="CelsiusConverterGUI.java" references="false" stamp="1480718702754" version="1.0"/>
+</session>

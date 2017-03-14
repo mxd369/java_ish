@@ -1,0 +1,69 @@
+// date object
+// create a date object
+// java standard library
+
+DateSimpleFormat df = 
+
+"mm/dd/yyyy"
+
+
+// constructor
+// pattern
+// has a parse
+// accepts a string
+df parse ("01/10/1991")
+
+// create an object inside a person class
+
+df parse ("01/10/1991")
+
+
+// create a student class
+public class student extends<T>
+
+
+creating a concrete class
+
+comparable person not comparable
+
+
+for sorted list you'll need T
+implement it in a way that you can store anything that is comparable
+
+
+public SortedDBlList<T> union (SortedDBlList<? extends T> otherList);
+
+
+
+public boolean remove(Object o);
+// need equal to do the comparison
+
+
+
+
+
+
+SortedDblList
+  a writeObect(...)
+  a readObject(...)
+  // store the object inside the list
+  // so the node
+  // the node 
+  
+  
+  
+NOTE: DRawww
+draw a picture conceptually
+then covert it into java
+
+list must be sorted
+
+
+
+California state Univerity
+
+
+doubly linked list
+
+head is null
+// it will give a 

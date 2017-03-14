@@ -1,0 +1,66 @@
+https://www.youtube.com/watch?v=6MisF1sxBTo&t=1s
+Serialization
+
+Serialization is the process of converting an object into a stream
+
+Deserialization is the process of reconstructing an object that has been serialized before.
+
+Serialization
+Object
+		-> Bytes
+                -> Database
+                -> Memory
+                -> File
+
+Deserialization
+Object
+		<- Bytes
+                <- Database
+                <- Memory
+                <- File
+                
+                
+Why serialize?
+
+1 Store Data / State of an object
+2 Transmit Data / State of an object
+3 Clone an object without overriding clone
+
+
+Serialize Object -> File
+  To store a serialized object in a file,
+  create an ObjectOutputStream
+  with a FileOutputStream
+
+
+FileOutputStream vs ObjectOutputStream
+  FileOutputStream  // sequence of bytes => file
+    Writes binary data to a file
+  ObjectOutputStream
+    Converts a Java Object (or a primitive type) to a
+    sequence of bytes and writes it to an OutputStream
+    (e.g. FileOutputStream, ByteArrayOutputStream,..)
+
+============================Serialize | Deserialize
+    
+Serialize:
+new ObjectOutputStream(new FileOutputStream("clients.ser"))
+	object => sequence of bytes => file
+
+   
+Deserialize:
+new ObjectInputStream(new FileInputStream("clients.ser"))
+	file => sequence of bytes => object
+
+readObject() // read an object from the ObjectInputStream
+
+============================
+
+Interface Serializable
+  - Required, if a class wants to have its state serialized/deserialized
+  - No methods, no fields
+  - Purpose to identify a class as serializable
+  - if a class implements Serializable every instance field has to be serializable or declared transient
+  - all primitive-type variables are serializable
+
+

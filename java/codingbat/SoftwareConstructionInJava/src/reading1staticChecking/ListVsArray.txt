@@ -1,0 +1,29 @@
+list vs. array
+
+
+Question #1
+
+Rewrite these variable declarations using Lists instead of arrays.
+
+We're only declaring the variables, not initializing them with any value.
+
+String[] names
+
+Answer:
+List<String> names
+
+
+Question #2
+
+int[] numbers
+
+Answer:
+List<Integer> numbers
+
+
+Question #3
+
+char[][] grid
+
+Answers:
+List<List<Character>> grid

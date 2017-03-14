@@ -1,0 +1,234 @@
+===================PP 5.1
+
+11507846-1
+
+Coin
+
+===================PP 5.2
+===================PP 5.3
+===================PP 5.4
+10632263-1.png
+
+/*
+
+PP 5.4
+Design and implement a class called Sphere that contains instance data that represents
+the sphere's diameter.
+
+Define the Sphere constructor to accept and initialize the diameter,
+and include getter and setter methods for the diameter.
+
+Include methods that calculate
+and return the volume and surface area of the sphere
+(see Programming Project 3.5 for the formulas).
+Include a toString method that returns a one-line description of the sphere.
+
+Create a driver class called MultiSphere,
+whose main method instantiates and updates several Sphere objects.
+
+Program Plan
+  - Implement two classes "Sphere" and "MultiSphere"
+  - Class "Sphere" contains constructor to initialize parameter,
+    setDiameter and getDiameter methods.
+  - Implement methods to calculate volume and area of the sphere.
+  - Class "MultiSphere" updates of the Sphere with parameters.
+
+volume = (4/3) pi r ^ 3
+surface area = 4 pi r ^ 2
+
+
+*/
+
+
+
+Sphere 1 :
+Diameter    :12.0
+Volume      :678.58
+SurfaceArea :452.39
+
+Sphere 2 :
+Diameter    :14.0
+Volume      :1077.57
+SurfaceArea :615.75
+
+Sphere 3 :
+Diameter    :16.0
+Volume      :1608.5
+SurfaceArea :804.25
+
+Sphere 4 :
+Diameter    :18.0
+Volume      :2290.22
+SurfaceArea :1017.88
+
+Sphere 5 :
+Diameter    :20.0
+Volume      :3141.59
+SurfaceArea :1256.64
+
+
+===================PP 5.5
+
+Design and Implement a class called Dog that contains instance data
+that represents the dog's name and age. Define the dog constructor 
+to accept and initialize instance data.
+Include getter and setter methods for the name and age.
+Include a method to compute and return the age of the dog in "person years"
+(seven times the dog's age). Include a toString method that returns a one-line description
+of the dog. Create a driver class called Kennel, whose main method
+instantiates and updates several Dog objects.
+
+
+/*
+10632264-1
+Program Plan
+
+Implement two classes "Dog" and "Kennel"
+Class "Dog" contains constructor to initialize parameters of dog's name and age.
+Create set and get methods to update the parameters of dog's name and age.
+Implement getPerAge method to get person years of dog's age.
+Implement toString method to given description of the dog.
+Class "kennel" updates the Dog's description
+*/
+
+===================PP 5.6
+
+Design and implement a class called Box that contains instance data that represent
+the height, width, and depth of the box.
+Also include a boolean variable called full as instance data that represents whether the box
+is full or not. Define the Box constructor to accept and initialize the height,
+width, and depth of the box. Each newly created Box is empty
+(the constructor should initialize full to false).
+Include getter and setter methods for all instance data. 
+Include a toString method that returns a one-line description of the box.
+Create a driver class called BoxTest, whose main method instantiates and updates
+several Box objects.
+
+
+/*
+10632265-1
+Program Plan
+
+Implement two classes "Box" and "BoxTest"
+Class "Box" contains all the description of the box.
+Class "BoxTest" updates the box.
+*/
+
+
+===================PP 5.7
+
+Design and implement a class called 'Book' that contains instance data
+from the 'title, author, publisher, and copyright date'. 
+
+Define the Book constructor to accept and initialize these data.
+
+Include setter and getter methods for all instance data.
+
+Include a toString method that returns a nicely formatted,
+multiline description of the book. 
+
+Create a driver called 'Bookshelf', whose main method instantiates and updates several
+Book objects.
+
+/* 10632266-1
+
+Implement two classes:
+  "Book"
+  "Bookshelf"
+
+"Book":
+  contains instance data from:
+  title,
+  author,
+  publisher,
+  copyright date
+  
+  setter and getter methods for all instance data
+  
+  toString method that returns formatted multiline description for the book
+
+"Bookshelf":
+  -the tester class
+  -main method instantiates and updates several book objects
+*/
+
+/*
+Program plan
+
+  implement two classes "Book" and "Bookshelf"
+  Class "Book" contains constructor to initialize parameters of title, author,
+  publisher, and copyright date.
+  Create set and get methods to update the parameters all instance data.
+  Implement toString method to given description of the book in multiline.
+  Driver class "Bookshelf" updates the books.
+*/
+
+===================PP 5.8
+
+Design and implement a class called 'Flight' that represents an airline flight.
+It should contain instance data that represent the airline name, the 
+flight number, and the flight's origin and destination cities.
+
+Define
+the Flight constructor to accept and initialize all instance data. 
+Include getter and setter methods for all instance data. Include a toString
+method that returns a one-line description of the flight.
+Create a driver class called FlightTest, whose main method
+instantiates and updates several Flight objects. 
+
+/*
+11507847-1
+
+class:
+  FlightTest: main method instantiates and updates several FLight objects
+  Flight: // represents an airline flight
+  
+  instance data: // data defined at the class level and created in memory for every object
+    airline name,
+    flight number
+    flights origin
+    destination cities.
+    
+    constructor: // special method that has the same name as the class,
+    // invoked when an object is instantiated, used to initialize the object
+    
+    define the class constructor to accept and initialize all instance data
+    
+    getter and setter methods for all instance data
+    
+    include a toString method that returns a one-line description of the flight
+*/
+
+/*
+Program Plan 11507847-1
+Create a flight class that includes airline name, flight number, and destination cities
+Define a constructor that accepts all instance data.
+Using setters and getters for the class to update the data
+Create a driver class for updating the Flight objects
+*/
+
+
+===================PP 5.9
+
+Design and implement a class called 'Bulb' that represents a light bulb
+that can be turned on and off.
+Create a driver class called 'Lights', whose main method instantiates
+and turns on some Bulb objects.
+
+===================PP 5.10
+
+Die
+
+===================PP 5.11
+
+PairOfDice
+
+===================PP 5.12
+
+Account
+
+===================PP 5.13
+
+Card
+
+Design an implement a class called Card that represents a standard

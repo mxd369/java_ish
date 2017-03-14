@@ -1,0 +1,58 @@
+===================PP 9.1
+
+12246253-1
+
+===================PP 9.2
+
+12246254-1
+
+===================PP 9.3
+
+Modify the RationalNumber class from Chapter so that it implements the Comparable interface.
+To perform the comparison, compute an equivalent floating point value from the numerator
+and denominator for both RationalNumber objects, and then compare them using a tolerance
+value of 0.0001. Write a main driver to test your modifications.
+
+Step1:
+Program Plan:
+  -Define RationalNumber class by implementing comparable interface.
+  -CompareTo method calculates the rational fraction value and 
+  compares with tolerance
+  -Instantiating objects of class RationalNumber and then testing all the
+  methods defined
+
+===================PP 9.4
+
+
+===================PP 9.5
+
+
+===================PP 9.6
+
+
+===================PP 9.7
+
+Modify the Task class from Programming Project 9.6 so that is also implements
+the Comparable interface from the Java Standard class library. Implements
+the interface such that the tasks are ranked by priority. Create a driver class
+whose main method shows these new features of Task objects.
+
+"Programming Project 1"
+
+Design a Java interface called Priority that includes two methods: setPriority and getPriority.
+The interface should define a way to establish numeric priority among a set of objects.
+Design and implement a class called Task that represents a task (such as on a to-do list)
+that implements the Priority interface. Create a driver class to exercise some Task objects.
+
+Program Plan:
+
+  -Defining interface Priority.
+  -Define class Task which implements Priority interface and defines methods of its class
+  as well as Priority interface.
+  -Task implements comparable interface, method compareTo compares two task objects.
+  -TaskDriver tests the Task class methods using objects.
+
+===================PP 9.8
+
+
+===================PP 9.9

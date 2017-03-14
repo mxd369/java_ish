@@ -1,0 +1,15 @@
+The Dot Operator (.)
+
+The dot operator (.) gives you access to an object's state and behavior (instance variables methods).
+
+// make a new object Dog d = new Dog();
+Dog d = new Dog();
+
+// tell it to bark by using the
+// dot operator on the
+// variable d to call bark()
+d.bark();
+
+// set its size using the
+// dot operator
+d.size = 40;

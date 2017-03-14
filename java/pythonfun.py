@@ -1,0 +1,26 @@
+import math
+def pythonfunction(x):
+  return (math.sqrt(3-(5*x)+(x**2)+(x**3))/(x-1))
+
+print("from the left")
+print("As x -> 1^-")
+print(pythonfunction(0))
+print(pythonfunction(.5))
+print(pythonfunction(.9))
+print(pythonfunction(.99))
+print(pythonfunction(.999))
+print(pythonfunction(.9999))
+print(pythonfunction(.99999))
+print(pythonfunction(.999999))
+print(pythonfunction(.9999999))
+
+print("from the right")
+print("As x -> 1^+")
+print(pythonfunction(2))
+print(pythonfunction(1.5))
+print(pythonfunction(1.1))
+print(pythonfunction(1.01))
+print(pythonfunction(1.001))
+print(pythonfunction(1.0001))
+print(pythonfunction(1.00001))
+print(pythonfunction(1.000001))

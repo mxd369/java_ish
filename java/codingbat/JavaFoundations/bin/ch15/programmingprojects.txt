@@ -1,0 +1,76 @@
+===================PP 15.1
+===================PP 15.2
+===================PP 15.3
+===================PP 15.4
+
+11116846-1
+
+===================PP 15.5
+===================PP 15.6
+===================PP 15.7
+===================PP 15.8
+===================PP 15.9
+
+12306907-1
+
+===================PP 15.10
+
+12255183-1
+
+===================PP 15.11
+
+/*
+Linked Implementation of a List
+
+Program Plan:
+-Create addFirst method so that adds the specified element at beginning of the list.
+-Create addList method so that adds the specified element at the end of the list.
+-Create add method so that adds the specified element at the specified position of the list.
+-Create another add method so that adds the specified element at the end of the list.
+-Create remove method so that removes and returns the first occurrence of the specified element from the list
+and throws and EmptyCollectionException if the list is empty and throws a NoSuchElementException if the
+specified element is not found in the list.
+-Create removeFirst method so that removes and returns the first element from the list and throws an
+EmptyCollectionException if the list is empty.
+-Create removeLast method so that removes and returns the last element from the list
+and throws an EmptyCollectionException if the list is empty.
+-Create first method so that returns the first element in the list.
+-Create last method so that returns the last element in this list.
+-Create contains method so that returns true if the specified element is found
+in the list and false otherwise and it throws an EmptyCollectionException if the list has no elements.
+-Create isEmpty method so that returns true if this is empty and false otherwise.
+-Create size method so that returns the number of elements in this list.
+-Create iterator method so that returns an iterator for the elements currently in the list.
+-Create toString method so that returns a string representation of the list.
+-Create an object for LinkedList class of integers.
+-Add elements at the beginning of the list by calling addFirst method and display the list.
+-Add elements at the end of the list by calling addLast method and display the list.
+-Add elements at the specified location of the list by calling add method and display the list.
+-Call remove, removeLast, removeFirst, first, last, isEmpty, and size methods and then display the list
+of elements after each operation.
+
+*/
+
+LinkedListDemo.java
+LinkedList.java
+LinearNode.java
+ListADT.java
+LinkedIterator.java
+EmptyCollectionException.java
+ElementNotFoundException.java
+
+===================PP 15.2
+
+Implement a stack using an ArrayList
+
+===================PP 15.3
+
+Implement a queue using an LinkedList
+
+===================PP 15.4
+
+Implement a queue using an arrayList
+
+===================PP 15.5
+===================PP 15.6
+===================PP 15.7

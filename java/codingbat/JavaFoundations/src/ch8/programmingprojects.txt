@@ -1,0 +1,32 @@
+===================PP 8.1
+
+Design and implement a class called MonetaryCoin that is derived from Coin class presented
+in chapter 5. Store a value in the monetary coin that represents its value, and add a method
+that returns its value. Create a driver class to instantiate and compute the sum of several
+MonetaryCoin objects. Demonstrate that a monetary coin inherits its parent's ability to
+be flipped.
+
+===================PP 8.2
+===================PP 8.3
+
+10641639-1
+
+Program Plan:
+  Implement a class ReadingMaterial to store and print values of title, number of pages, published values.
+  Implement the classes Book, Novel, Magazine, TechnicalJournal, and TextBook which extends required class.
+  Implement a driver class to initiate and exercise several of the classes
+
+===================PP 8.4
+===================PP 8.5
+
+10641640-1
+
+Program Plan:
+  Implement an abstract class People with its constructor and a print method declaration.
+  Implement the classes American, Indians, and Germans which extend the People class.
+  Display the demographic information about a set of people, such as nationality, income, occupation, age, and so on.
+  Implement a driver class to instantiate and exercise several of the classes.
+
+===================PP 8.6
+===================PP 8.7
+===================PP 8.8

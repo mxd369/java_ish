@@ -1,0 +1,321 @@
+https://www.reddit.com/r/javaexamples/comments/34nv25/intermediate_a_sorted_doublylinked_list_using/
+
+
+
+
+
+
+[Intermediate] A Sorted, Doubly-Linked List using Generics (self.javaexamples)
+submitted 1 year ago * by Philboyd_Studge
+A Sorted, Doubly-Linked List using Generics
+Even though Java already has a standard library version of a LinkedList class that is already a doubly-linked list (meaning you can iterate backwards or forwards through the list), many classes in Data Structures will make you learn to roll your own.
+A Linked List is a data structure made up of recursive Nodes that 'point' to the next item in the list. A doubly-linked list has nodes that point to the previous item in the list also.
+In this example, we are inserting new data items in a sorted position as they are added, so the list is always sorted.
+We start by declaring the class in a Generic fashion:
+public class SortedDoubleLinkedList<E extends Comparable<E>>
+Generic means that it can take any non-primitive type as an argument, and will still do the same thing. We can make a list of Strings, Integers, Arrays, or any user-defined class. In the above definition, E becomes the variable name for our class type. the extends comparable<E> is there for the sorting aspect, as we need to be able to compare two of the supplied types for sorting purposes. If you want to make a list of objects, you need to make sure the class implements Comparable and overrides compareTo (More on that later).
+Now we define our Node class (I am using an inner class for this)
+class Node
+{
+    private E value;
+    private Node next;
+    private Node previous;
+
+    public Node(E value, Node next, Node previous)
+    {
+        this.value = value;
+        this.next = next;
+        this.previous = previous;
+
+    }
+
+    public E getValue() { return value; }
+    public void setValue(E value) { this.value = value; }
+    public Node getNext() { return next; }
+    public void setNext(Node node) { this.next = node; }
+    public Node getPrevious() { return previous; }
+    public void setPrevious(Node node) { this.previous = node; }
+
+
+}
+Each Node instance has itself two Node type member variables, that point to the next or previous Node. We will define two special nodes, head and tail that make the first and last items in the list. These make for special conditions when adding or removing nodes. Note our referencing data type 'E' for the actual data value. Then we add getters/setters for each member variable.
+So we define our class like this:
+public class SortedDoubleLinkedList<E extends Comparable<E>>
+{
+    // Nodes for the first and last element
+    Node head;
+    Node tail;
+
+    // list size
+    int length;
+
+    public SortedDoubleLinkedList() 
+    {
+        this.length = 0;
+    }
+We onle need three member variables, one to keep track of the head (or first or root) of the list, one for the tail or last or end) of the list, and one that keeps track of the size of the list.
+Now to define our add() method, which uses an insertion sort.
+// add function that inserts elements sorted
+public void add(E value)
+{
+    // first insert
+    if (length==0)
+    {
+        head = new Node(value, null, null);
+        tail = head;
+        length++;
+        return;
+    }
+    else
+    {
+        if (value.compareTo(head.getValue()) < 0)
+        {
+            // insert before head, make new head
+            // set next to head, previous to null
+            Node newNode = new Node(value, head, null);
+            // point old head previous to new node
+            head.setPrevious(newNode);
+            // make new node head
+            head = newNode;
+            length++;
+            return;
+        }
+        else
+        {
+            Node current = head.getNext();
+            while (current != null)
+            {
+                if (value.compareTo(current.getValue()) <= 0)
+                {
+                    // insert before current
+                    // make new nodes next = current, previous = current.previous
+                    Node newNode = new Node(value, current, current.getPrevious());
+                    // point node before insert's next to newnode
+                    current.getPrevious().setNext(newNode);
+                    // make new node previous to current
+                    current.setPrevious(newNode);
+                    length++;
+                    return;
+                }
+                current = current.getNext();
+            }
+
+            // add to tail
+            Node newNode = new Node(value, null, tail);
+            tail.setNext(newNode);
+            tail = newNode;
+            length++;
+            return;
+        }
+    }
+}
+Now we can define a `toString() function that iterates through the list:
+public String toString()
+{
+    String result = "";
+    Node current = head;
+    result += "Count = " + length + "\n";
+    while (current != null)
+    {
+        result += "" + current.getValue().toString() + "\n";
+        current = current.getNext();
+    }
+    return result;
+}
+And one backwards:
+public String toStringDescending()
+{
+    String result = "";
+    Node current = tail;
+    result += "Count = " + length + "\n";
+    while (current != null)
+    {
+        result += "" + current.getValue().toString() + "\n";
+        current = current.getPrevious();
+    }
+    return result;
+
+}
+And one recursive:
+// recursive display functions
+public String toStringRecursive()
+{
+    return toStringRecursive(head);
+}
+
+public String toStringRecursive(Node node)
+{
+    if (node==null) return "";
+    String retval = node.getValue().toString() + "\n";
+    return retval + toStringRecursive(node.getNext());
+}
+(to make a recursive descending function, just change head to tail and change getNext() to getPrevious())
+Adding some other functions, such as a remove(), a get-by-index, a find() and contains() and more, here is the final code:
+on Gist, as the code is getting pretty long, along with a test program, and a test class to use for objects
+Our test class for objects is an updated version of the Inventory class I have used in several examples, in this case it is updated to use the Comparable interface, so the insertion sort will work properly, based on the member field 'Item':
+public class Inventory implements Comparable<Inventory>
+{
+    private String item;
+    private int qty;
+    private float price;
+
+    public Inventory(String item, int qty, float price)
+    {
+        this.item = item;
+        this.qty = qty;
+        this.price = price;
+    }
+
+    public String getItem()
+    {
+        return item;
+    }
+
+    public float getTotal()
+    {
+        return qty * price;
+    }
+
+    public String toString()
+    {
+        return "===================\nItem: " + item + "\n" + "Quantity: " + qty + "\n"
+                    + "Price: " + price + "\n====================\n";
+    }
+
+    public String toCSVString()
+    {
+        return item + "," + qty + "," + price;
+    }
+
+    @Override
+    public int compareTo(Inventory obj)
+    {
+        return this.item.compareTo(obj.getItem());
+    }
+}
+Here is the output from TestDLL.java:
+List in  order:
+Count = 6
+0
+123
+234
+234
+3455
+5000
+
+List in descending order:
+Count = 6
+5000
+3455
+234
+234
+123
+0
+
+List contains item value of '3455' = true
+Removing an item
+List contains item value of '3455' = false
+List in order:
+Count = 5
+0
+123
+234
+234
+5000
+
+First:0
+Last:5000
+List of strings
+Count = 3
+Argue
+Fish
+Meat
+
+List contains 'Fish' = true
+
+List of doubles:
+3.1415967
+27.3
+120.003
+
+
+Object list:
+Count = 4
+===================
+Item: Alphabet Soup
+Quantity: 100
+Price: 0.99
+====================
+
+===================
+Item: Maple Syrup
+Quantity: 20
+Price: 5.99
+====================
+
+===================
+Item: Purple Suit
+Quantity: 5
+Price: 199.99
+====================
+
+===================
+Item: Quixotic Journey
+Quantity: 10
+Price: 20.0
+====================
+
+
+Count = 4
+===================
+Item: Quixotic Journey
+Quantity: 10
+Price: 20.0
+====================
+
+===================
+Item: Purple Suit
+Quantity: 5
+Price: 199.99
+====================
+
+===================
+Item: Maple Syrup
+Quantity: 20
+Price: 5.99
+====================
+
+===================
+Item: Alphabet Soup
+Quantity: 100
+Price: 0.99
+====================
+
+
+Object at index 0 =
+===================
+Item: Alphabet Soup
+Quantity: 100
+Price: 0.99
+====================
+
+Remove object at index 1
+Count = 3
+===================
+Item: Alphabet Soup
+Quantity: 100
+Price: 0.99
+====================
+
+===================
+Item: Purple Suit
+Quantity: 5
+Price: 199.99
+====================
+
+===================
+Item: Quixotic Journey
+Quantity: 10
+Price: 20.0
+====================
+You could add a Binary Search Tree to make the find() method much faster for large amounts of data.

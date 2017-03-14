@@ -1,0 +1,43 @@
+-----------------------------------------------------------------------------
+  Employee
+-----------------------------------------------------------------------------
+  // model our employee class.
+  - firstName : String
+  - lastName : String
+  - phoneNumber : String
+  - address : Address
+  - employeeID : int
+  - department : String
+  - title : String
+-----------------------------------------------------------------------------
+  /*
+  The last rectangle is the behaviors,
+  or the methods that we'll need to be able to access employee information.
+  We have a constructor, Employee, which is used to instantiate our employees.
+  As well as some get methods.
+  Need to add set methods for each piece of data to go along with the get methods
+  */
+  + Employee (String, String, String, Address, int, String, String)
+  + getName() : String
+  + getAddress() : Address
+  + getPhone() : String
+  + getEEID() : int
+  + getDept() : String
+  + getTitle() : String
+  + set...
+  /*
+  Get methods = accessor methods
+  Set methods = mutator methods
+  To reinforce encapsulation, have get and set methods for
+  all your data and declare your data as private inside the class.
+  This avoids any accidental updating of the data.
+  */
+-----------------------------------------------------------------------------
+
+
+
+
+Main
+
+payroll.java
+instantiating employees in main payroll program.

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;middle.gif&apos; to &apos;gui/src/images&apos;&#x0A;- Original project: &apos;docsoracle&apos;&#x0A;- Destination element: &apos;gui/src/images&apos;&#x0A;- Original element: &apos;middle.gif&apos;" description="Copy file" destination="=gui/src&lt;images" element1="src/middle.gif" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1480910848887" units="0" version="1.0"/>
+</session>

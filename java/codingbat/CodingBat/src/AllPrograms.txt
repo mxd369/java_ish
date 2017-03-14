@@ -1,0 +1,1651 @@
+=================================================Warmup-1
+Simple warmup problems to get started (solutions available).
+String Introduction, String Substring, If Boolean Logic 1, If Boolean Logic 2
+=============================Warmup-1 > sleepIn 
+
+The parameter weekday is true if it is a weekday,
+and the parameter vacation is true if we are on vacation.
+We sleep in if it is not a weekday or we're on vacation.
+Return true if we sleep in.
+
+sleepIn(false, false) → true
+sleepIn(true, false) → false
+sleepIn(false, true) → true
+
+
+
+public boolean sleepIn(boolean weekday, boolean vacation) {
+  if (!weekday || vacation){
+			return true;
+		} return false;
+}
+
+
+Expected	Run		
+sleepIn(false, false) → true	true	OK	
+sleepIn(true, false) → false	false	OK	
+sleepIn(false, true) → true	true	OK	
+sleepIn(true, true) → true	true	OK	
+=============================Warmup-1 > monkeyTrouble 
+
+We have two monkeys, a and b,
+and the parameters aSmile and bSmile indicate if each is smiling.
+We are in trouble if they are both smiling or if neither of them is smiling.
+Return true if we are in trouble.
+
+monkeyTrouble(true, true) → true
+monkeyTrouble(false, false) → true
+monkeyTrouble(true, false) → false
+
+public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
+  return aSmile && bSmile || !aSmile && !bSmile;
+}
+=============================Warmup-1 > sumDouble 
+
+Given two int values, return their sum.
+Unless the two values are the same,
+then return double their sum.
+
+sumDouble(1, 2) → 3
+sumDouble(3, 2) → 5
+sumDouble(2, 2) → 8
+
+public int sumDouble(int a, int b) {
+  if(a == b){
+    return (a + b) * 2;
+  }else 
+  return a + b;
+}
+
+Expected	Run		
+sumDouble(1, 2) → 3	3	OK	
+sumDouble(3, 2) → 5	5	OK	
+sumDouble(2, 2) → 8	8	OK	
+sumDouble(-1, 0) → -1	-1	OK	
+sumDouble(3, 3) → 12	12	OK	
+sumDouble(0, 0) → 0	0	OK	
+sumDouble(0, 1) → 1	1	OK	
+sumDouble(3, 4) → 7	7	OK	
+
+=============================Warmup-1 > diff21 
+
+Given an int n,
+return the absolute difference between n and 21,
+except return double the absolute difference if n is over 21.
+
+diff21(19) → 2
+diff21(10) → 11
+diff21(21) → 0
+
+public int diff21(int n) {
+  int absdiff = Math.abs(n-21);
+		if (n >= 21){
+			return absdiff * 2;
+		} else
+			return absdiff;	
+}
+
+Expected	Run		
+diff21(19) → 2	2	OK	
+diff21(10) → 11	11	OK	
+diff21(21) → 0	0	OK	
+diff21(22) → 2	2	OK	
+diff21(25) → 8	8	OK	
+diff21(30) → 18	18	OK	
+diff21(0) → 21	21	OK	
+diff21(1) → 20	20	OK	
+diff21(2) → 19	19	OK	
+diff21(-1) → 22	22	OK	
+diff21(-2) → 23	23	OK	
+diff21(50) → 58	58	OK	
+=============================Warmup-1 > parrotTrouble 
+
+We have a loud talking parrot.
+The "hour" parameter is the current hour time in the range 0..23.
+We are in trouble if the parrot is talking and the hour is before 7 or after 20.
+Return true if we are in trouble.
+
+parrotTrouble(true, 6) → true
+parrotTrouble(true, 7) → false
+parrotTrouble(false, 6) → false
+
+public boolean parrotTrouble(boolean talking, int hour) {
+  return talking && (hour < 7 || hour > 20);
+}
+
+Expected	Run		
+parrotTrouble(true, 6) → true	true	OK	
+parrotTrouble(true, 7) → false	false	OK	
+parrotTrouble(false, 6) → false	false	OK	
+parrotTrouble(true, 21) → true	true	OK	
+parrotTrouble(false, 21) → false	false	OK	
+parrotTrouble(false, 20) → false	false	OK	
+parrotTrouble(true, 23) → true	true	OK	
+parrotTrouble(false, 23) → false	false	OK	
+parrotTrouble(true, 20) → false	false	OK	
+parrotTrouble(false, 12) → false	false	OK
+
+=============================Warmup-1 > makes10 
+
+Given 2 ints, a and b, return true if one if them is 10 or if their sum is 10.
+
+makes10(9, 10) → true
+makes10(9, 9) → false
+makes10(1, 9) → true
+
+public boolean makes10(int a, int b) {
+  return (a == 10 || b == 10) || (a + b == 10);
+}
+
+Expected	Run		
+makes10(9, 10) → true	true	OK	
+makes10(9, 9) → false	false	OK	
+makes10(1, 9) → true	true	OK	
+makes10(10, 1) → true	true	OK	
+makes10(10, 10) → true	true	OK	
+makes10(8, 2) → true	true	OK	
+makes10(8, 3) → false	false	OK	
+makes10(10, 42) → true	true	OK	
+makes10(12, -2) → true	true	OK
+
+=============================Warmup-1 > nearHundred 
+
+Given an int n, return true if it is within 10 of 100 or 200.
+Note: Math.abs(num) computes the absolute value of a number.
+
+nearHundred(93) → true
+nearHundred(90) → true
+nearHundred(89) → false
+
+public boolean nearHundred(int n) {
+  return Math.abs(n - 100) <= 10 || Math.abs(n - 200) <= 10;
+}
+
+Expected	Run		
+nearHundred(93) → true	true	OK	
+nearHundred(90) → true	true	OK	
+nearHundred(89) → false	false	OK	
+nearHundred(110) → true	true	OK	
+nearHundred(111) → false	false	OK	
+nearHundred(121) → false	false	OK	
+nearHundred(-101) → false	false	OK	
+nearHundred(-209) → false	false	OK	
+nearHundred(190) → true	true	OK	
+nearHundred(209) → true	true	OK	
+nearHundred(0) → false	false	OK	
+nearHundred(5) → false	false	OK	
+nearHundred(-50) → false	false	OK	
+nearHundred(191) → true	true	OK	
+nearHundred(189) → false	false	OK	
+nearHundred(200) → true	true	OK	
+nearHundred(210) → true	true	OK	
+nearHundred(211) → false	false	OK	
+nearHundred(290) → false	false	OK
+
+=============================Warmup-1 > posNeg 
+
+Given 2 int values, return true if one is negative and one is positive.
+Except if the parameter "negative" is true,
+then return true only if both are negative.
+
+posNeg(1, -1, false) → true
+posNeg(-1, 1, false) → true
+posNeg(-4, -5, true) → true
+
+public boolean posNeg(int a, int b, boolean negative) {
+    if (!negative) {
+			return (a >= 0 && b < 0) || (b >= 0 && a < 0);
+		}
+		else if (negative){
+			return a < 0 && b < 0;
+		}
+		return false;
+}
+
+Expected	Run		
+posNeg(1, -1, false) → true	true	OK	
+posNeg(-1, 1, false) → true	true	OK	
+posNeg(-4, -5, true) → true	true	OK	
+posNeg(-4, -5, false) → false	false	OK	
+posNeg(-4, 5, false) → true	true	OK	
+posNeg(-4, 5, true) → false	false	OK	
+posNeg(1, 1, false) → false	false	OK	
+posNeg(-1, -1, false) → false	false	OK	
+posNeg(1, -1, true) → false	false	OK	
+posNeg(-1, 1, true) → false	false	OK	
+posNeg(1, 1, true) → false	false	OK	
+posNeg(-1, -1, true) → true	true	OK	
+posNeg(5, -5, false) → true	true	OK	
+posNeg(-6, 6, false) → true	true	OK	
+posNeg(-5, -6, false) → false	false	OK	
+posNeg(-2, -1, false) → false	false	OK	
+posNeg(1, 2, false) → false	false	OK	
+posNeg(-5, 6, true) → false	false	OK	
+posNeg(-5, -5, true) → true	true	OK
+
+=============================Warmup-1 > notString 
+
+Given a string, return a new string where "not " has been added to the front.
+However, if the string already begins with "not",
+return the string unchanged.
+Note: use .equals() to compare 2 strings.
+
+notString("candy") → "not candy"
+notString("x") → "not x"
+notString("not bad") → "not bad"
+
+
+public String notString(String str) {
+		if (str.length() >= 3 && str.substring(0,3).equals("not")){
+		  return str;
+		}
+		else
+		  return "not " + str; 
+}
+
+Expected	Run		
+notString("candy") → "not candy"	"not candy"	OK	
+notString("x") → "not x"	"not x"	OK	
+notString("not bad") → "not bad"	"not bad"	OK	
+notString("bad") → "not bad"	"not bad"	OK	
+notString("not") → "not"	"not"	OK	
+notString("is not") → "not is not"	"not is not"	OK	
+notString("no") → "not no"	"not no"	OK
+
+=============================Warmup-1 > missingChar 
+
+Given a non-empty string and an int n,
+return a new string where the char at index n has been removed.
+The value of n will be a valid index of a char in the original string
+(i.e. n will be in the range 0..str.length()-1 inclusive).
+
+missingChar("kitten", 1) → "ktten"
+missingChar("kitten", 0) → "itten"
+missingChar("kitten", 4) → "kittn"
+
+public String missingChar(String str, int n) {
+    String front = str.substring(0,n);
+		String back = str.substring(n+1,str.length());
+		return front + back;
+}
+
+Expected	Run		
+missingChar("kitten", 1) → "ktten"	"ktten"	OK	
+missingChar("kitten", 0) → "itten"	"itten"	OK	
+missingChar("kitten", 4) → "kittn"	"kittn"	OK	
+missingChar("Hi", 0) → "i"	"i"	OK	
+missingChar("Hi", 1) → "H"	"H"	OK	
+missingChar("code", 0) → "ode"	"ode"	OK	
+missingChar("code", 1) → "cde"	"cde"	OK	
+missingChar("code", 2) → "coe"	"coe"	OK	
+missingChar("code", 3) → "cod"	"cod"	OK	
+missingChar("chocolate", 8) → "chocolat"	"chocolat"	OK
+=============================Warmup-1 > frontBack 
+
+Given a string, return a new string where the first and last chars have been exchanged.
+
+frontBack("code") → "eodc"
+frontBack("a") → "a"
+frontBack("ab") → "ba"
+
+public String frontBack(String str) {
+  if (str.length() >= 2){
+    String first = str.substring(0,1);
+    String middle = str.substring(1, str.length()-1);
+    String last = str.substring(str.length()-1,str.length());
+    return last + middle + first;
+  }
+  else
+    return str;
+}
+
+Expected	Run		
+frontBack("code") → "eodc"	"eodc"	OK	
+frontBack("a") → "a"	"a"	OK	
+frontBack("ab") → "ba"	"ba"	OK	
+frontBack("abc") → "cba"	"cba"	OK	
+frontBack("") → ""	""	OK	
+frontBack("Chocolate") → "ehocolatC"	"ehocolatC"	OK	
+frontBack("aavJ") → "Java"	"Java"	OK	
+frontBack("hello") → "oellh"	"oellh"	OK	
+=============================Warmup-1 > front3 
+
+Given a string, we'll say that the front is the first 3 chars of the string.
+If the string length is less than 3, the front is whatever is there.
+Return a new string which is 3 copies of the front.
+
+front3("Java") → "JavJavJav"
+front3("Chocolate") → "ChoChoCho"
+front3("abc") → "abcabcabc"
+
+public String front3(String str) {
+  if (str.length()>=3){
+    String front = str.substring(0,3);
+    return front + front + front;
+  }
+  else
+    return str+str+str;
+}
+
+
+Expected	Run		
+front3("Java") → "JavJavJav"	"JavJavJav"	OK	
+front3("Chocolate") → "ChoChoCho"	"ChoChoCho"	OK	
+front3("abc") → "abcabcabc"	"abcabcabc"	OK	
+front3("abcXYZ") → "abcabcabc"	"abcabcabc"	OK	
+front3("ab") → "ababab"	"ababab"	OK	
+front3("a") → "aaa"	"aaa"	OK	
+front3("") → ""	""	OK
+=============================Warmup-1 > backAround 
+
+Given a string, take the last char and return a new string with
+the last char added at the front and back, so "cat" yields "tcatt".
+The original string will be length 1 or more.
+
+backAround("cat") → "tcatt"
+backAround("Hello") → "oHelloo"
+backAround("a") → "aaa"
+
+public String backAround(String str) {
+  String last = str.substring(str.length() - 1);
+  return  last + str + last;
+}
+
+Expected	Run		
+backAround("cat") → "tcatt"	"tcatt"	OK	
+backAround("Hello") → "oHelloo"	"oHelloo"	OK	
+backAround("a") → "aaa"	"aaa"	OK	
+backAround("abc") → "cabcc"	"cabcc"	OK	
+backAround("read") → "dreadd"	"dreadd"	OK	
+backAround("boo") → "obooo"	"obooo"	OK
+
+=============================Warmup-1 > or35 
+
+Return true if the given non-negative number
+is a multiple of 3 or a multiple of 5.
+Use the % "mod" operator -- see Introduction to Mod
+
+or35(3) → true
+or35(10) → true
+or35(8) → false
+
+public boolean or35(int n) {
+  return (n % 5 == 0 || n % 3 == 0);
+}
+
+Expected	Run		
+or35(3) → true	true	OK	
+or35(10) → true	true	OK	
+or35(8) → false	false	OK	
+or35(15) → true	true	OK	
+or35(5) → true	true	OK	
+or35(9) → true	true	OK	
+or35(4) → false	false	OK	
+or35(7) → false	false	OK	
+or35(6) → true	true	OK	
+or35(17) → false	false	OK	
+or35(18) → true	true	OK	
+or35(29) → false	false	OK	
+or35(20) → true	true	OK	
+or35(21) → true	true	OK	
+or35(22) → false	false	OK	
+or35(45) → true	true	OK	
+or35(99) → true	true	OK	
+or35(100) → true	true	OK	
+or35(101) → false	false	OK	
+or35(121) → false	false	OK	
+or35(122) → false	false	OK	
+or35(123) → true	true	OK
+
+=============================Warmup-1 > front22 
+
+Given a string,
+take the first 2 chars
+and return the string with the 2 chars added
+at both the front and back,
+so "kitten" yields"kikittenki".
+If the string length is less than 2,
+use whatever chars are there.
+
+
+front22("kitten") → "kikittenki"
+front22("Ha") → "HaHaHa"
+front22("abc") → "ababcab"
+
+public String front22(String str) {
+  if(str.length()<2){
+    return str + str + str;
+  }
+  String firsttwo = str.substring(0,2);
+  return firsttwo + str + firsttwo;
+}
+
+
+Expected	Run		
+front22("kitten") → "kikittenki"	"kikittenki"	OK	
+front22("Ha") → "HaHaHa"	"HaHaHa"	OK	
+front22("abc") → "ababcab"	"ababcab"	OK	
+front22("ab") → "ababab"	"ababab"	OK	
+front22("a") → "aaa"	"aaa"	OK	
+front22("") → ""	""	OK	
+front22("Logic") → "LoLogicLo"	"LoLogicLo"	OK
+
+=============================Warmup-1 > startHi 
+
+Given a string,
+return true if the string starts with "hi"
+and false otherwise.
+
+startHi("hi there") → true
+startHi("hi") → true
+startHi("hello hi") → false
+
+public boolean startHi(String str) {
+  if(str.length()<2) return false;
+  
+  // so the substring() below does not go past the end.
+  String firstTwo = str.substring(0,2);
+  
+  if(str.length()>=2){
+    return (firstTwo.equals("hi"));
+  }else return false;
+
+}
+
+
+Expected	Run		
+startHi("hi there") → true	true	OK	
+startHi("hi") → true	true	OK	
+startHi("hello hi") → false	false	OK	
+startHi("he") → false	false	OK	
+startHi("h") → false	false	OK	
+startHi("") → false	false	OK	
+startHi("ho hi") → false	false	OK	
+startHi("hi ho") → true	true	OK
+
+=============================Warmup-1 > icyHot 
+
+Given two temperatures,
+return true if one is less than 0
+and the other is greater than 100.
+
+icyHot(120, -1) → true
+icyHot(-1, 120) → true
+icyHot(2, 120) → false
+
+
+public boolean icyHot(int temp1, int temp2) {
+  if ((temp1 < 0 && temp2 > 100) || (temp2 < 0 && temp1 > 100))
+  return true;
+  else
+    return false;  
+}
+
+Expected	Run		
+icyHot(120, -1) → true	true	OK	
+icyHot(-1, 120) → true	true	OK	
+icyHot(2, 120) → false	false	OK	
+icyHot(-1, 100) → false	false	OK	
+icyHot(-2, -2) → false	false	OK	
+icyHot(120, 120) → false	false	OK
+
+
+=============================Warmup-1 > in1020 
+
+Given 2 int values, return true if either of them is in the range 10..20 inclusive.
+
+in1020(12, 99) → true
+in1020(21, 12) → true
+in1020(8, 99) → false
+
+public boolean in1020(int a, int b) {
+  return ((a >= 10 && a <= 20) || (b >= 10 && b <= 20));
+}
+
+Expected	Run		
+in1020(12, 99) → true	true	OK	
+in1020(21, 12) → true	true	OK	
+in1020(8, 99) → false	false	OK	
+in1020(99, 10) → true	true	OK	
+in1020(20, 20) → true	true	OK	
+in1020(21, 21) → false	false	OK	
+in1020(9, 9) → false	false	OK
+
+=============================Warmup-1 > hasTeen 
+
+We'll say that a number is "teen" if it is in the range 13..19 inclusive.
+Given 3 int values, return true if 1 or more of them are teen.
+
+hasTeen(13, 20, 10) → true
+hasTeen(20, 19, 10) → true
+hasTeen(20, 10, 13) → true
+
+public boolean hasTeen(int a, int b, int c) {
+  return (a>= 13 && a<=19) || (b>= 13 && b<=19) || (c>= 13 && c<=19);
+}
+
+Expected	Run		
+hasTeen(13, 20, 10) → true	true	OK	
+hasTeen(20, 19, 10) → true	true	OK	
+hasTeen(20, 10, 13) → true	true	OK	
+hasTeen(1, 20, 12) → false	false	OK	
+hasTeen(19, 20, 12) → true	true	OK	
+hasTeen(12, 20, 19) → true	true	OK	
+hasTeen(12, 9, 20) → false	false	OK	
+hasTeen(12, 18, 20) → true	true	OK	
+hasTeen(14, 2, 20) → true	true	OK	
+hasTeen(4, 2, 20) → false	false	OK	
+hasTeen(11, 22, 22) → false	false	OK
+
+=============================Warmup-1 > loneTeen 
+
+We'll say that a number is "teen" if it is in the range 13..19 inclusive.
+Given 2 int values, return true if one or the other is teen, but not both.
+
+loneTeen(13, 99) → true
+loneTeen(21, 19) → true
+loneTeen(13, 13) → false
+
+public boolean loneTeen(int a, int b) {
+  if ((a>=13 && a<=19) && !(b>=13 && b<=19)) return true;
+  if ((b>=13 && b<=19) && !(a>=13 && a<=19)) return true;  
+  return false;
+}
+
+
+Expected	Run		
+loneTeen(13, 99) → true		true	OK	
+loneTeen(21, 19) → true		true	OK	
+loneTeen(13, 13) → false	false	OK	
+loneTeen(14, 20) → true		true	OK	
+loneTeen(20, 15) → true		true	OK	
+loneTeen(16, 17) → false	false	OK	
+loneTeen(16, 9)  → true		true	OK	
+loneTeen(16, 18) → false	false	OK	
+loneTeen(13, 19) → false	false	OK	
+loneTeen(13, 20) → true		true	OK	
+loneTeen(6, 18)  → true		true	OK	
+loneTeen(99, 13) → true		true	OK	
+loneTeen(99, 99) → false	false	OK	
+
+
+Solution:
+public boolean loneTeen(int a, int b) {
+  // Store teen-ness in boolean local vars first. Boolean local
+  // vars like this are a little rare, but here they work great.
+  boolean aTeen = (a >= 13 && a <= 19);
+  boolean bTeen = (b >= 13 && b <= 19);
+  
+  return (aTeen && !bTeen) || (!aTeen && bTeen);
+  // Translation: one or the other, but not both.
+  // Alternately could use the Java xor operator, but it's obscure.
+}
+=============================Warmup-1 > delDel 
+
+Given a string, if the string "del" appears starting at index 1,
+return a string where that "del" has been deleted.
+Otherwise, return the string unchanged.
+
+delDel("adelbc") → "abc"
+delDel("adelHello") → "aHello"
+delDel("adedbc") → "adedbc"
+
+public String delDel(String str) {
+  if (str.length()>=4 && str.substring(1,4).equals("del"))
+    return str.substring(0,1) + str.substring(4);
+  else
+    return str;
+}
+
+
+					Expected	Run		
+delDel("adelbc") 	→ "abc"		"abc"		OK	
+delDel("adelHello") → "aHello"	"aHello"	OK	
+delDel("adedbc") 	→ "adedbc"	"adedbc"	OK	
+delDel("abcdel")	→ "abcdel"	"abcdel"	OK	
+delDel("add") 		→ "add"		"add"		OK	
+delDel("ad")		→ "ad"		"ad"		OK	
+delDel("a") 		→ "a"		"a"			OK	
+delDel("") 			→ ""		""			OK	
+delDel("del") 		→ "del"		"del"		OK	
+delDel("adel") 		→ "a"		"a"			OK	
+delDel("aadelbb") 	→ "aadelbb"	"aadelbb"	OK
+
+
+Solution:
+public String delDel(String str) {
+  if (str.length()>=4 && str.substring(1, 4).equals("del")) {
+    // First char + rest of string starting at 4
+    return str.substring(0, 1) + str.substring(4);
+  }
+  // Otherwise return the original string.
+  return str;
+}
+=============================Warmup-1 > mixStart 
+
+Return true if the given string begins with "mix",
+except the 'm' can be anything,
+so "pix", "9ix" .. all count.
+
+mixStart("mix snacks") → true
+mixStart("pix snacks") → true
+mixStart("piz snacks") → false
+
+
+public boolean mixStart(String str) {
+  if(str.length()>=3 && str.substring(1,3).equals("ix"))
+    return true;
+  else
+    return false;
+}
+
+						Expected	Run		
+mixStart("mix snacks") → true		true	OK	
+mixStart("pix snacks") → true		true	OK	
+mixStart("piz snacks") → false		false	OK	
+mixStart("nix")		   → true		true	OK	
+mixStart("ni") 		   → false		false	OK	
+mixStart("n") 		   → false		false	OK	
+mixStart("") 		   → false		false	OK
+
+
+Solution:
+public boolean mixStart(String str) {
+  // Check if string is too small
+  // (so substring() below does not go off the end)
+  if (str.length() < 3) return false;
+  
+  // Pull out length 2 string for the "ix" part
+  // (i.e. substring starting at index 1 and stopping just before 3).
+  String two = str.substring(1, 3);
+  
+  if (two.equals("ix")) {
+    return true;
+  } else {
+    return false;
+  }
+  // This last part can be shortened to just:
+  // return(two.equals("ix"));
+}
+=============================Warmup-1 > startOz 
+
+Given a string, return a string made of the first 2 chars (if present),
+however include first char only if it is 'o'
+and include the second only if it is 'z',
+so "ozymandias" yields "oz".
+
+startOz("ozymandias") → "oz"
+startOz("bzoo") → "z"
+startOz("oxx") → "o"
+
+
+public String startOz(String str) {
+  String result = "";
+  if(str.length()>= 1 && str.charAt(0)=='o'){
+    result = result + str.charAt(0);
+  }
+  
+  if(str.length()>=2 && str.charAt(1)=='z'){
+    result = result + str.charAt(1);
+  }
+  
+  return result;
+}
+
+
+/*
+public String startOz(String str) {
+  if (str.length() >= 2 && str.substring(1,2).equals("z") && str.substring(0,1).equals("o"))
+    return "oz";
+  else if  (str.length() >= 1 && str.substring(0,1).equals("o"))
+    return str.substring(0,1);
+  else if (str.length() >= 1 && str.substring(1,2).equals("z"))
+    return str.substring(1,2);
+  return "";
+}
+*/
+						Expected	Run		
+startOz("ozymandias") → "oz"	"oz"	OK	
+startOz("bzoo")		  → "z"		"z"		OK	
+startOz("oxx") 		  → "o"		"o"		OK	
+startOz("oz") 		  → "oz"	"oz"	OK	
+startOz("ounce") 	  → "o"		"o"		OK	
+startOz("o") 		  → "o"		"o"		OK	
+startOz("abc") 		  → ""		""		OK	
+startOz("") 		  → ""		""		OK	
+startOz("zoo") 		  → ""		""		OK	
+startOz("aztec") 	  → "z"		"z"		OK	
+startOz("zzzz")		  → "z"		"z"		OK	
+startOz("oznic") 	  → "oz"	"oz"	OK
+
+
+Solution:
+public String startOz(String str) {
+  String result = "";
+  
+  if (str.length() >= 1 && str.charAt(0)=='o') {
+    result = result + str.charAt(0);
+  }
+  
+  if (str.length() >= 2 && str.charAt(1)=='z') {
+    result = result + str.charAt(1);
+  }
+  
+  return result;
+}
+
+=============================Warmup-1 > intMax 
+
+Given three int values, a b c, return the largest.
+
+intMax(1, 2, 3) → 3
+intMax(1, 3, 2) → 3
+intMax(3, 2, 1) → 3
+
+public int intMax(int a, int b, int c) {
+  int largest=0;
+  if (a > b){
+    largest = a;
+  } else
+    largest = b;
+  
+  if (largest < c){
+    largest = c;
+  }
+
+  return largest;
+}
+
+					Expected	Run		
+intMax(1, 2, 3) 	→ 3		3	OK	
+intMax(1, 3, 2) 	→ 3		3	OK	
+intMax(3, 2, 1) 	→ 3		3	OK	
+intMax(9, 3, 3) 	→ 9		9	OK	
+intMax(3, 9, 3) 	→ 9		9	OK	
+intMax(3, 3, 9) 	→ 9		9	OK	
+intMax(8, 2, 3) 	→ 8		8	OK	
+intMax(-3, -1, -2)  → -1	-1	OK	
+intMax(6, 2, 5) 	→ 6		6	OK	
+intMax(5, 6, 2) 	→ 6		6	OK	
+intMax(5, 2, 6)		→ 6		6	OK
+
+
+
+intMax(1, 2, 3) → 3
+intMax(1, 3, 2) → 3
+intMax(3, 2, 1) → 3
+Go...Save, Compile, RunShow Solution
+
+
+
+public int intMax(int a, int b, int c) {
+  int largest=0;
+  if (a > b){
+    largest = a;
+  } else
+    largest = b;
+  
+  if (largest < c){
+    largest = c;
+  }
+  return largest;
+}
+Go
+Shorter output 
+Solution:
+public int intMax(int a, int b, int c) {
+  int max;
+  
+  // First check between a and b
+  if (a > b) {
+    max = a;
+  } else {
+    max = b;
+  }
+  
+  // Now check between max and c
+  if (c > max) {
+    max = c;
+  }
+  
+  return max;
+  
+  // Could use the built in Math.max(x, y) function which selects the larger
+  // of two values.
+}
+
+=============================Warmup-1 > close10 
+
+Given 2 int values,
+return whichever value is nearest to the value 10,
+or return 0 in the event of a tie.
+Note that Math.abs(n) returns the absolute value of a number.
+
+close10(8, 13) → 8
+close10(13, 8) → 8
+close10(13, 7) → 0
+
+// v1
+public int close10(int a, int b) {
+  if (Math.abs(a-10) < Math.abs(b-10)){
+    return a;
+  }
+  else if(Math.abs(a-10) > Math.abs(b-10)){
+    return b;
+  }
+  else if(a == b){
+    return 0;
+  }
+  return 0;
+}
+
+// v2
+public int close10(int a, int b) {
+  if (Math.abs(a-10) < Math.abs(b-10)){
+    return a;
+  }
+  if(Math.abs(a-10) > Math.abs(b-10)){
+    return b;
+  }
+  return 0;
+}
+
+				Expected	Run		
+close10(8, 13)  → 8		8	OK	
+close10(13, 8)  → 8		8	OK	
+close10(13, 7)  → 0		0	OK	
+close10(7, 13)  → 0		0	OK	
+close10(9, 13)  → 9		9	OK	
+close10(13, 8)  → 8		8	OK	
+close10(10, 12) → 10	10	OK	
+close10(11, 10) → 10	10	OK	
+close10(5, 21)  → 5		5	OK	
+close10(0, 20)  → 0		0	OK	
+close10(10, 10) → 0		0	OK
+
+
+Solution:
+public int close10(int a, int b) {
+  int aDiff = Math.abs(a - 10);
+  int bDiff = Math.abs(b - 10);
+  
+  if (aDiff < bDiff) {
+    return a;
+  }
+  if (bDiff < aDiff) {
+    return b;
+  }
+  return 0;  // i.e. aDiff == bDiff
+  
+  // Solution notes: aDiff/bDiff local vars clean the code up a bit.
+  // Could have "else" before the second if and the return 0.
+}
+
+=============================Warmup-1 > in3050 
+
+Given 2 int values,
+return true if they are both in the range 30..40 inclusive,
+or they are both in the range 40..50 inclusive.
+
+in3050(30, 31) → true
+in3050(30, 41) → false
+in3050(40, 50) → true
+
+public boolean in3050(int a, int b) {
+  return ((a >= 30 && a <= 40) && (b >= 30 && b <= 40)) || ((a >= 40 && a <= 50) && (b >= 40 && b <= 50)); 
+}
+
+				 Expected	 Run		
+in3050(30, 31) → true	true	OK	
+in3050(30, 41) → false	false	OK	
+in3050(40, 50) → true	true	OK	
+in3050(40, 51) → false	false	OK	
+in3050(39, 50) → false	false	OK	
+in3050(50, 39) → false	false	OK	
+in3050(40, 39) → true	true	OK	
+in3050(49, 48) → true	true	OK	
+in3050(50, 40) → true	true	OK	
+in3050(50, 51) → false	false	OK	
+in3050(35, 36) → true	true	OK	
+in3050(35, 45) → false	false	OK
+
+
+Solution:
+public boolean in3050(int a, int b) {
+  if (a >= 30 && a <= 40 && b >= 30 && b <= 40) {
+    return true;
+  }
+  if (a >= 40 && a <= 50 && b >= 40 && b <= 50) {
+    return true;
+  }
+  return false;
+  // This could be written as one very large expression,
+  // connecting the two main parts with ||
+}
+=============================Warmup-1 > max1020 
+
+Given 2 positive int values,
+return the larger value that is in the range 10..20 inclusive,
+or return 0 if neither is in that range.
+
+max1020(11, 19) → 19
+max1020(19, 11) → 19
+max1020(11, 9) → 11
+
+
+public int max1020(int a, int b) {
+  int compareA=0;
+  int compareB=0;
+
+  if ((a < 10 || a > 20) && (b < 10 || b > 20)){
+    return 0;
+  }
+  if( a >= 10 && a <= 20){
+    compareA = compareA + a;
+  }
+  if( b >= 10 && b <= 20){
+    compareB = compareB + b;
+  }
+  if( compareA > compareB  ){
+    return a;
+  } else 
+  return b;
+
+}
+
+
+				Expected	Run		
+max1020(11, 19) → 19	19	OK	
+max1020(19, 11) → 19	19	OK	
+max1020(11, 9)  → 11	11	OK	
+max1020(9, 21)  → 0		0	OK	
+max1020(10, 21) → 10	10	OK	
+max1020(21, 10) → 10	10	OK	
+max1020(9, 11)  → 11	11	OK	
+max1020(23, 10) → 10	10	OK	
+max1020(20, 10) → 20	20	OK	
+max1020(7, 20)  → 20	20	OK	
+max1020(17, 16) → 17	17	OK	
+
+
+Solution:
+public int max1020(int a, int b) {
+  // First make it so the bigger value is in a
+  if (b > a) {
+    int temp = a;
+    a = b;
+    b = temp;
+  }
+  
+  // Knowing a is bigger, just check a first
+  if (a >= 10 && a <= 20) return a;
+  if (b >= 10 && b <= 20) return b;
+  return 0;
+}
+=============================Warmup-1 > stringE 
+
+Return true if the given string contains between 1 and 3 'e' chars.
+
+stringE("Hello")   → true
+stringE("Heelle")  → true
+stringE("Heelele") → false
+
+
+public boolean stringE(String str) {
+  int ecount = 0; 
+  for ( int i = 0; i<str.length(); i++ ){
+    if (str.substring(i,i+1).equals("e")) ecount++;
+  }
+  return (ecount >= 1 && ecount <= 3);
+}
+
+
+					Expected	Run
+stringE("Hello") 	→ true	true	OK	
+stringE("Heelle") 	→ true	true	OK	
+stringE("Heelele")  → false	false	OK	
+stringE("Hll") 		→ false	false	OK	
+stringE("e") 		→ true	true	OK	
+stringE("") 		→ false	false	OK
+
+
+Solution:
+public boolean stringE(String str) {
+  int count = 0;
+
+  for (int i=0; i<str.length(); i++) {
+    if (str.charAt(i) == 'e') count++;
+    // alternately: str.substring(i, i+1).equals("e")
+  }
+
+  return (count >= 1 && count <= 3);
+}
+
+=============================Warmup-1 > lastDigit 
+
+Given two non-negative int values,
+return true if they have the same last digit,
+such as with 27 and 57.
+Note that the % "mod" operator computes remainders,
+so 17 % 10 is 7.
+
+
+lastDigit(7, 17) → true
+lastDigit(6, 17) → false
+lastDigit(3, 113) → true
+
+
+public boolean lastDigit(int a, int b) {
+  int checkA = b % 10;
+  int checkB = a % 10;
+  if (checkA == checkB){
+    return true;
+  }
+  return false;
+}
+
+
+					Expected	Run		
+lastDigit(7, 17) 	→ true	true	OK	
+lastDigit(6, 17) 	→ false	false	OK	
+lastDigit(3, 113)	→ true	true	OK	
+lastDigit(114, 113) → false	false	OK	
+lastDigit(114, 4) 	→ true	true	OK	
+lastDigit(10, 0) 	→ true	true	OK	
+lastDigit(11, 0) 	→ false false	OK	
+
+
+Solution:
+public boolean lastDigit(int a, int b) {
+  // True if the last digits are the same
+  return(a % 10 == b % 10);
+}
+
+=============================Warmup-1 > endUp 
+
+Given a string, return a new string where the last 3 chars are now in upper case.
+If the string has less than 3 chars, uppercase whatever is there.
+Note that str.toUpperCase() returns the uppercase version of a string.
+
+endUp("Hello") 	  → "HeLLO"
+endUp("hi there") → "hi thERE"
+endUp("hi") 	  → "HI"
+
+public String endUp(String str) {
+  if(str.length()>= 3){
+    String back = str.substring(str.length()-3);
+    String front = str.substring(0,str.length()-3);
+    return front + back.toUpperCase();
+  }
+  if(str.length()<=3) return str.toUpperCase();
+  return str;
+}
+
+
+					Expected	Run		
+endUp("Hello")    → "HeLLO"		"HeLLO"		OK	
+endUp("hi there") → "hi thERE"	"hi thERE"	OK	
+endUp("hi")       → "HI"		"HI"		OK	
+endUp("woo hoo")  → "woo HOO"	"woo HOO"	OK	
+endUp("xyz12")    → "xyZ12"		"xyZ12"		OK	
+endUp("x")        → "X"			"X"			OK	
+endUp("")         → ""			""			OK
+
+
+Solution:
+public String endUp(String str) {
+  if (str.length() <= 3) return str.toUpperCase();
+  int cut = str.length() - 3;
+  String front = str.substring(0, cut);
+  String back  = str.substring(cut);  // this takes from cut to the end
+  
+  return front + back.toUpperCase();
+}
+=============================Warmup-1 > everyNth 
+
+Given a non-empty string and an int N,
+return the string made starting with char 0,
+and then every Nth char of the string.
+So if N is 3, use char 0, 3, 6, ... and so on. N is 1 or more.
+
+everyNth("Miracle", 2) → "Mrce"
+everyNth("abcdefg", 2) → "aceg"
+everyNth("abcdefg", 3) → "adg"
+
+public String everyNth(String str, int n) {
+  String result = "";
+  for (int i = 0; i<str.length();i=i+n){
+    result = result + str.charAt(i);
+   // n = n + n;
+  }
+  return result;
+}
+
+								Expected	Run		
+everyNth("Miracle", 2) 		→ "Mrce"	"Mrce"	OK	
+everyNth("abcdefg", 2) 		→ "aceg"	"aceg"	OK	
+everyNth("abcdefg", 3) 		→ "adg"		"adg"	OK	
+everyNth("Chocolate", 3)	→ "Cca"		"Cca"	OK	
+everyNth("Chocolates", 3) 	→ "Ccas"	"Ccas"	OK	
+everyNth("Chocolates", 4) 	→ "Coe"		"Coe"	OK	
+everyNth("Chocolates", 100) → "C"		"C"		OK	
+
+
+Solution:
+public String everyNth(String str, int n) {
+  String result = "";
+  
+  // Look at every nth char
+  for (int i=0; i<str.length(); i = i + n) {
+    result = result + str.charAt(i);
+  }
+  return result;
+}
+
+=================================================Warmup-2
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=================================================String-1
+=============================String-1 > helloName 
+
+Given a string name, e.g. "Bob", return a greeting of the form "Hello Bob!".
+
+helloName("Bob") → "Hello Bob!"
+helloName("Alice") → "Hello Alice!"
+helloName("X") → "Hello X!"
+
+public String helloName(String name) {
+  return "Hello " + name + "!";
+}
+
+Expected	Run		
+helloName("Bob") → "Hello Bob!"	"Hello Bob!"	OK	
+helloName("Alice") → "Hello Alice!"	"Hello Alice!"	OK	
+helloName("X") → "Hello X!"	"Hello X!"	OK	
+helloName("Dolly") → "Hello Dolly!"	"Hello Dolly!"	OK	
+helloName("Alpha") → "Hello Alpha!"	"Hello Alpha!"	OK	
+helloName("Omega") → "Hello Omega!"	"Hello Omega!"	OK	
+helloName("Goodbye") → "Hello Goodbye!"	"Hello Goodbye!"	OK	
+helloName("ho ho ho") → "Hello ho ho ho!"	"Hello ho ho ho!"	OK	
+helloName("xyz!") → "Hello xyz!!"	"Hello xyz!!"	OK	
+helloName("Hello") → "Hello Hello!"	"Hello Hello!"	OK	
+other tests
+OK
+
+=============================String-1 > makeAbba 
+
+Given two strings, a and b, return the result of putting them together
+in the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi".
+
+makeAbba("Hi", "Bye") → "HiByeByeHi"
+makeAbba("Yo", "Alice") → "YoAliceAliceYo"
+makeAbba("What", "Up") → "WhatUpUpWhat"
+
+public String makeAbba(String a, String b) {
+  return a + b + b + a;
+}
+
+
+Expected	Run		
+makeAbba("Hi", "Bye") → "HiByeByeHi"	"HiByeByeHi"	OK	
+makeAbba("Yo", "Alice") → "YoAliceAliceYo"	"YoAliceAliceYo"	OK	
+makeAbba("What", "Up") → "WhatUpUpWhat"	"WhatUpUpWhat"	OK	
+makeAbba("aaa", "bbb") → "aaabbbbbbaaa"	"aaabbbbbbaaa"	OK	
+makeAbba("x", "y") → "xyyx"	"xyyx"	OK	
+makeAbba("x", "") → "xx"	"xx"	OK	
+makeAbba("", "y") → "yy"	"yy"	OK	
+makeAbba("Bo", "Ya") → "BoYaYaBo"	"BoYaYaBo"	OK	
+makeAbba("Ya", "Ya") → "YaYaYaYa"	"YaYaYaYa"	OK	
+other tests
+OK
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=================================================Array-1
+Basic array problems -- no loops.. Use a[0], a[1], ... to access elements in
+an array, a.length is the length (note that s.length() is for Strings).
+Allocate a new array like this: int[] a = new int[10]; // length 10 array 
+See the Java Arrays and Loops Help document for help.
+=============================Array-1 > firstLast6 
+
+Given an array of ints,
+return true if 6 appears as either the first or last element in the array.
+The array will be length 1 or more.
+
+firstLast6([1, 2, 6]) → true
+firstLast6([6, 1, 2, 3]) → true
+firstLast6([13, 6, 1, 2, 3]) → false
+
+public boolean firstLast6(int[] nums) {
+  return nums[0] == 6 || nums[nums.length-1] == 6;
+}
+
+
+								Expected	Run		
+firstLast6([1, 2, 6]) 		 → true		true	OK	
+firstLast6([6, 1, 2, 3]) 	 → true		true	OK	
+firstLast6([13, 6, 1, 2, 3]) → false	false	OK	
+firstLast6([13, 6, 1, 2, 6]) → true		true	OK	
+firstLast6([3, 2, 1]) 		 → false	false	OK	
+firstLast6([3, 6, 1]) 		 → false	false	OK	
+firstLast6([3, 6]) 			 → true		true	OK	
+firstLast6([6]) 			 → true		true	OK	
+firstLast6([3]) 			 → false	false	OK	
+firstLast6([5, 6]) 			 → true		true	OK	
+firstLast6([5, 5]) 			 → false	false	OK	
+firstLast6([1, 2, 3, 4, 6])  → true		true	OK	
+firstLast6([1, 2, 3, 4]) 	 → false	false	OK	
+other tests
+OK
+
+=============================Array-1 > sameFirstLast 
+
+Given an array of ints,
+return true if the array is length 1 or more,
+and the first element and the last element are equal.
+
+sameFirstLast([1, 2, 3])    → false
+sameFirstLast([1, 2, 3, 1]) → true
+sameFirstLast([1, 2, 1])    → true
+
+public boolean sameFirstLast(int[] nums) {
+  return (nums.length>=1) && (nums[0] == nums[nums.length-1]);
+}
+
+Expected	Run		
+sameFirstLast([1, 2, 3]) → false	false	OK	
+sameFirstLast([1, 2, 3, 1]) → true	true	OK	
+sameFirstLast([1, 2, 1]) → true	true	OK	
+sameFirstLast([7]) → true	true	OK	
+sameFirstLast([]) → false	false	OK	
+sameFirstLast([1, 2, 3, 4, 5, 1]) → true	true	OK	
+sameFirstLast([1, 2, 3, 4, 5, 13]) → false	false	OK	
+sameFirstLast([13, 2, 3, 4, 5, 13]) → true	true	OK	
+sameFirstLast([7, 7]) → true	true	OK	
+other tests
+OK	
+
+
+Hint:
+The length is nums.length, the first element is nums[0]
+and the last element is nums[nums.length - 1]
+
+
+
+Our Solution:
+
+public boolean sameFirstLast(int[] nums) {
+  return (nums.length >= 1 && nums[0] == nums[nums.length - 1]);
+   
+  // Solution notes: this is basically a direct translation of the problem
+  // statement. The length check needs to come first, so we don't get an
+  // error in the case that the length is 0.
+}
+
+
+=============================Array-1 > makePi 
+
+Return an int array length 3 containing the first 3 digits of pi, {3, 1, 4}.
+
+makePi() → [3, 1, 4]
+
+public int[] makePi() {
+  int[] pi = {3,1,4};
+  return pi;
+}
+
+Expected	Run		
+makePi() → [3, 1, 4]	[3, 1, 4]	OK
+
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=================================================Logic-1 > cigarParty 
+
+When squirrels get together for a party, they like to have cigars.
+A squirrel party is successful when the number of cigars is between 40 and 60, inclusive.
+Unless it is the weekend, in which case there is no upper bound on the number of cigars.
+Return true if the party with the given values is successful, or false otherwise.
+
+cigarParty(30, false) → false
+cigarParty(50, false) → true
+cigarParty(70, true) → true
+
+public boolean cigarParty(int cigars, boolean isWeekend) {
+  if (isWeekend){
+    return (cigars >= 40);
+  }
+  else
+    return (cigars >= 40 && cigars <= 60);
+}
+
+
+Expected	Run		
+cigarParty(30, false) → false	false	OK	
+cigarParty(50, false) → true	true	OK	
+cigarParty(70, true) → true	true	OK	
+cigarParty(30, true) → false	false	OK	
+cigarParty(50, true) → true	true	OK	
+cigarParty(60, false) → true	true	OK	
+cigarParty(61, false) → false	false	OK	
+cigarParty(40, false) → true	true	OK	
+cigarParty(39, false) → false	false	OK	
+cigarParty(40, true) → true	true	OK	
+cigarParty(39, true) → false	false	OK	
+other tests
+OK
+
+
+Hint:
+One approach begins with
+if (isWeekend) {
+  ...
+} else {
+  ...
+}
+In each section, check cigars with >=, <= etc.
+to return true if cigars is in range or else return false.
+Extra trick: for shorter code,
+note that "return (x >= 50)" automatically returns
+true if x >= 50 and false if x < 50.
+This works because the expression "(x >= 50)" evaluates to
+the value true or false,
+and then that value is returned.
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=================================================Logic-1
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=================================================AP-1
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=================================================Recursion-1
+Basic recursion problems.
+Recursion strategy:
+first test for one or two base cases that are so simple,
+the answer can be returned immediately.
+Otherwise,
+make a recursive a call for a smaller case
+(that is, a case which is a step towards the base case).
+Assume that the recursive call works correctly,
+and fix up what it returns to make the answer.
+
+=============================Recursion-1 > factorial 
+
+Given n of 1 or more, return the factorial of n, which is n * (n-1) * (n-2) ... 1.
+Compute the result recursively (without loops).
+
+factorial(1) → 1
+factorial(2) → 2
+factorial(3) → 6
+
+public int factorial(int n) {
+  if(n==1) return 1;
+  return n * factorial(n-1);
+}
+
+Expected	Run		
+factorial(1) → 1	1	OK	
+factorial(2) → 2	2	OK	
+factorial(3) → 6	6	OK	
+factorial(4) → 24	24	OK	
+factorial(5) → 120	120	OK	
+factorial(6) → 720	720	OK	
+factorial(7) → 5040	5040	OK	
+factorial(8) → 40320	40320	OK	
+factorial(12) → 479001600	479001600	OK	
+other tests
+OK	
+
+=============================Recursion-1 > bunnyEars 
+
+We have a number of bunnies and each bunny has two big floppy ears.
+We want to compute the total number of ears across all the bunnies recursively (without loops or multiplication).
+
+Hint:
+First detect the base case (bunnies == 0), and in that case just return 0.
+Otherwise, make a recursive call to bunnyEars(bunnies-1).
+Trust that the recursive call returns the correct value,
+and fix it up by adding 2.
+
+
+bunnyEars(0) → 0
+bunnyEars(1) → 2
+bunnyEars(2) → 4
+
+public int bunnyEars(int bunnies) {
+  if (bunnies==0) return 0;
+  return 2 + bunnyEars(bunnies-1);
+}
+
+
+				Expected	Run		
+bunnyEars(0)   → 0		0	OK	
+bunnyEars(1)   → 2		2	OK	
+bunnyEars(2)   → 4		4	OK	
+bunnyEars(3)   → 6		6	OK	
+bunnyEars(4)   → 8		8	OK	
+bunnyEars(5)   → 10		10	OK	
+bunnyEars(12)  → 24		24	OK	
+bunnyEars(50)  → 100	100	OK	
+bunnyEars(234) → 468	468	OK	
+other tests
+OK
+=============================
+=============================
+=============================
+=============================
+=================================================Map-1
+Java Map API
+
+// Make a new empty map
+Map<String, String> map = new HashMap<String, String>();
+map.get(key) -- retrieves the stored value for a key,
+or null if that key is not present in the map.
+
+map.put(key, value) -- stores a new key/value pair in the map.
+Overwrites any existing value for that key.
+
+map.containsKey(key) -- returns true if the key is in the map,
+false otherwise.
+
+map.remove(key) -- removes the key/value pair for this key if present.
+Does nothing if the key is not present.
+=============================Map-1 > mapBully 
+
+Modify and return the given map as follows: if the key "a" has a value,
+set the key "b" to have that value, and set the key "a" to have the value "".
+Basically "b" is a bully, taking the value and replacing it with the empty string.
+
+mapBully({"b": "dirt", "a": "candy"}) → {"b": "candy", "a": ""}
+mapBully({"a": "candy"}) → {"b": "candy", "a": ""}
+mapBully({"b": "carrot", "c": "meh", "a": "candy"}) → {"b": "candy", "c": "meh", "a": ""}
+
+
+public Map<String, String> mapBully(Map<String, String> map) {
+
+  if (map.containsKey("a")){
+    map.put("b", map.get("a"));
+    map.put("a", "");
+  }
+  return map;
+}
+
+Expected	Run		
+mapBully({"b": "dirt", "a": "candy"}) → {"b": "candy", "a": ""}	{"b": "candy", "a": ""}	OK	
+mapBully({"a": "candy"}) → {"b": "candy", "a": ""}	{"b": "candy", "a": ""}	OK	
+mapBully({"b": "carrot", "c": "meh", "a": "candy"}) → {"b": "candy", "c": "meh", "a": ""}	{"b": "candy", "c": "meh", "a": ""}	OK	
+mapBully({"b": "carrot"}) → {"b": "carrot"}	{"b": "carrot"}	OK	
+mapBully({"c": "meh"}) → {"c": "meh"}	{"c": "meh"}	OK	
+mapBully({"c": "meh", "a": "sparkle"}) → {"b": "sparkle", "c": "meh", "a": ""}	{"b": "sparkle", "c": "meh", "a": ""}	OK	
+=============================Map-1 > mapShare 
+
+Modify and return the given map as follows:
+if the key "a" has a value, set the key "b" to have that same value.
+In all cases remove the key "c", leaving the rest of the map unchanged.
+
+mapShare({"b": "bbb", "c": "ccc", "a": "aaa"}) → {"b": "aaa", "a": "aaa"}
+mapShare({"b": "xyz", "c": "ccc"}) → {"b": "xyz"}
+mapShare({"d": "hi", "c": "meh", "a": "aaa"}) → {"d": "hi", "b": "aaa", "a": "aaa"}
+
+
+=============================
+=============================
+=============================
+=============================
+=================================================String-2
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=================================================Array-2
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=================================================Logic-2
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=================================================Recursion-2
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=================================================Map-2
+
+Maps with bulk data and loops.
+
+3
+
+
+Java Map API
+
+// Make a new empty map
+Map<String, String> map = new HashMap<String, String>();
+map.get(key) -- retrieves the stored value for a key, or null if that key is not present in the map.
+
+map.put(key, value) -- stores a new key/value pair in the map. Overwrites any existing value for that key.
+
+map.containsKey(key) -- returns true if the key is in the map, false otherwise.
+
+map.remove(key) -- removes the key/value pair for this key if present. Does nothing if the key is not present.
+=============================Map-2 > word0 
+
+Given an array of strings, return a Map<String, Integer> containing
+a key for every different string in the array, always with the value 0.
+For example the string "hello" makes the pair "hello":0.
+We'll do more complicated counting later,
+but for this problem the value is simply 0.
+
+word0(["a", "b", "a", "b"]) → {"b": 0, "a": 0}
+word0(["a", "b", "a", "c", "b"]) → {"b": 0, "c": 0, "a": 0}
+word0(["c", "b", "a"]) → {"b": 0, "c": 0, "a": 0}
+=============================
+=============================
+=============================
+=============================
+=============================
+=================================================String-3
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================
+=================================================Array-3
+=============================
+=============================
+=============================
+=============================
+=============================
+=============================

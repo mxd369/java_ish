@@ -1,0 +1,56 @@
+This is an example of a simulation that can be coded in Java
+to help determine the appropriate size for building a garage
+based on the expected number of customers at various times of the day.
+
+
+Parking Garage Simulation Example:
+
+  Simulate the entries and departures of cars
+
+  Track the loss of customers who can't enter when full
+
+  Two model classes:
+    Car
+    Garage
+
+  Three other classes: 
+    Event,
+    Schedule,
+    Monitor(data accumulator)
+
+==========
+Schedule Class    //will manage the events, monitor
+  Keeps a queue (list) of events
+  Ordered By Event Time
+  Drives the overall simulation
+  Continues while there are events in the queue
+==========
+Car Class
+  Contains the inter-arrival and length of stay
+  Upon Arrival it notifies the Monitor
+  Posts the arrival Event to the schedule
+  Checks if the garage is full; if not, it notifies the garage
+  Determines length of stay and posts departure event
+===========
+Garage Class
+  Tracks cars currently inside
+  Provides Status-full or not
+  Decreases available capacity if not already full
+===========
+Monitor Class
+  Tracks Statistics
+  Number of customers
+  Number of lost customers
+  Average length of stay
+  Revenue
+
+
+
+
+
+Sample Run
+  Start simulation by putting events in the schedule
+  Events are arrival of first car and the end of simulation
+  Repeat the basic simulation loop
+  Ask the Garage to report its current occupants
+  Ask the Monitor for overall stats for the session

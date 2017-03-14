@@ -1,0 +1,22 @@
+The benefit of the Monte Carlo method is it allows you to
+perform this calculation with very high numbers of trials
+by using the computer simulator.
+
+
+Monte Carlo Simulation
+  - Approximating the value of a function
+  - Using random sampling to make a "best guess"
+  
+Pattern
+  1. Define a domain of possible inputs.
+  2. Generate random inputs over the domain.
+  3. Perform a deterministic computation on the inputs.
+  4. Aggregate the results.
+
+Approximate PI
+  - Consider a square and a circle.
+  - Ratio of circle area to square area is PI/4
+  - Place circle inside square
+  - Select many random points
+  - Divide points in the circle by points in the square
+  

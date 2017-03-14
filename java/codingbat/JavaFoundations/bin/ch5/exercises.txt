@@ -1,0 +1,412 @@
+===============Page 236
+===============EX 5.1
+
+class: Superhero
+object: Superman
+  Superman is an object of the class Superhero
+
+class: Person
+object: Justin
+  Person is a class in which Justin in an object
+
+class: Pet
+object: Rover
+  Pet is a class in which Rover is an object
+
+class: Magazine
+object: Time
+  Magazine is a class in which Time is an object
+
+class: Holiday
+object: Christmas
+  Holiday is a class in which Christmas is an object
+
+===============EX 5.2
+
+class PictureFrame // represents a picture frame
+
+  Attributes for the class:
+    picHeight
+    picWidth
+
+  Operations for the class:
+    getPicHeight
+    setPicHeight
+    getPicWidth
+    setPicWidth
+    isPicture
+    fillPicture
+
+===============EX 5.3
+
+class Meeting // Meeting class
+
+  Attributes for the class:
+    meetDate
+    meetTime
+    meetLocation
+    meetPurpose
+    meetPoeple
+    meetPriority
+
+  Operations for the class:
+    setMeetDate
+    getMeetDate
+    setMeetTime
+    getMeetTime
+    setMeetLocation
+    getMeetLocation
+    setMeetPeople
+    getMeetPeople
+    setMeetPriority
+    getMeetPriority
+    announceMeeting
+    cancelMeeting
+    
+===============EX 5.4
+
+class Course // Course Class
+
+  Attributes for the class:
+    courseName
+    //courseTime
+    courseID
+    courseEligibility
+    numberOfVacancies
+  
+  Operations for the class:
+    setCourseName
+    getCourseName
+    setCourseID
+    getCourseID
+    setCourseEligibility
+    getCourseEligibility
+    setNumberOfVacancies
+    getNumberOfVacancies
+    choosingCourse
+
+===============EX 5.5
+
+skip
+ 
+===============EX 5.6
+
+ /**
+  * Retrieves the count of ... // method description
+  * @param cat the category to match
+  * @return the number of ...
+  */
+public int getCount(Category cat)
+{ ... }
+
+ lyrics method
+ /**
+  * lyrics method prints the lyrics of a song when invoked.
+  * @param acceptions no parameters
+  * @return no value
+  */
+ 
+ public String getLyrics()
+ { ... }
+
+
+solution:
+
+/**
+ * prints the lyrics of a song when invoked
+ * @param none
+ * @return none
+ */
+
+private static void lyrics()
+{
+	System.out.println("I want to imprint this on my memory");
+	System.out.println("I Love You");
+} // end of lyrics method
+
+
+===============EX 5.7
+
+/**
+ * cube method, accepts one integer parameter and
+ * returns that value raised to the third power
+ * @param integer
+ * @return int raised to the 3rd power
+ */
+
+public static void cube(int a)
+{
+	return (int)Math.pow(a, 3);
+}
+
+===============EX 5.8
+
+/**
+ * random100 returns a random integer in the range of 1 to 100
+ * @param none
+ * @return integer in range 1 to 100
+ */
+
+private static void random100
+{
+	Random rn = new Random();
+	return random.nextInt(100) + 1;
+}
+
+===============EX 5.9
+
+/**
+ * randomInRange accepts two integer parameters representing range.
+ * The first parameter is greater than the second.
+ * @param two integer parameters representing range
+ * @return a random integer in the specified range (inclusive)
+ */
+
+// my attempt
+public static void randomInRange(int a, int b)
+{
+	Random rn = new Random();
+	return random.nextInt(b,a);
+}
+
+// a solution found
+/*
+	Write a method called randomInRange that accepts two integer parameters representing a
+	range. The method should return a random integer in the specified range (inclusive). Return
+	zero if the first parameter is greater than the second.
+	// assumes java.util.Random is imported
+	*/
+	public static int randomInRange (int first, int second)
+	{
+		int result = 0;
+		Random generator = new Random();
+		if (first <= second)
+		{
+			int range = second - first + 1;
+			result = generator.nextInt(range) + first;
+		}
+	 return result;
+	}
+
+
+===============EX 5.10
+
+/**
+ * powersOfTwo prints the first 10 powers of 2 (starting with 2)
+ * @param none
+ * @return none
+ */
+
+// 2(^1,^2,^3,^4,...^10)
+public static void powersOfTwo()
+{
+	int base = 2;
+	for (int pow = 1; pow <= 10; pow++)
+	System.out.println((int)Math.pow(base,pow));
+}
+
+===============EX 5.11
+
+/**
+ * alarm prints the string "Alarm!" multiple times on separate lines, error message is parameter is less than 1
+ * @param accept an integer parameter that specifies how many times the string is printed
+ * @return 
+ */
+ 
+ public static void alarm(int num)
+ {
+ 	if(num >= 1)
+ 	{
+ 		for (int i = 0; i <= num; i ++)
+ 			System.out.println("Alarm!");
+ 	}
+ 	else
+ 		System.out.println("Error");
+ }
+
+
+
+===============EX 5.12
+
+/**
+ * sum100 returns the sum of the integers from 1 to 100, inclusive
+ * @param x
+ * @return sum of integers from 1 to 100 inclusive
+ */
+ 
+ public static void sum100()
+ {
+ 	int sum = 0;
+ 	for(int i = 1;i<=100;i++){
+ 		sum = sum + i;
+ 	}
+ 	return sum;
+ }
+
+===============EX 5.13
+
+/**
+ * maxOfTwo accepts two integer parameters that and returns the larger
+ * @param two integers
+ * @return larger integer
+ */
+ 
+public static int maxOfTwo(int a, int b)
+{
+	int larger;
+	if (a > b){
+		larger = a;
+	} else
+		larger = b;
+	return larger;
+ 
+} 
+
+===============EX 5.14
+
+/**
+ * sumRange accepts two integer parameters that represent a range.
+ * Issue an error message and return zero if the second parameter is less than the first.
+ * Otherwise, the method should return the sum of the integers in that range (inclusive)
+ * @param two integers
+ * @return sum of the integers in the range
+ */
+ 
+public static int sumRange(int startNum, int endNum)
+	 {
+
+	 	int sum = 0;
+	 	if (endNum < startNum)
+	 		return 0;
+	 	for(int i = startNum; i <= endNum; i++)
+	 	{
+	 		sum = sum + i;
+	 	}
+	 	return sum;
+	 }
+
+===============EX 5.15
+
+/**
+ * larger accepts two floating point parameters (of type double)
+ * and returns true if the first parameter is greater than the second,
+ * and returns false otherwise
+ * @param two floating point parameters of type double
+ * @return true if first param is greater than second, false otherwise
+ */
+
+public static boolean larger(double a, double b)
+{
+	return (a > b);
+}
+
+===============EX 5.16
+
+/**
+ * countA
+ * @param String
+ * @return int number of times character 'A' is found in the string
+ */
+
+public static int countA(String str)
+{
+	int count = 0;
+	for(int i = 0;i<str.length();i++)
+	{
+		if(str.charAt(i).equals('A')
+		{
+			count = count + 1;
+		}
+	return count;
+}
+
+
+// EX 5.16
+	 /*
+	 public static int countA(String str)
+	 {
+	 	int count = 0;
+	 	for(int i = 0;i<str.length();i++)
+	 	{
+	 		if(str.substring(i,i+1).equals("A"))
+	 		{
+	 			count = count + 1;
+	 		}
+	 	return count;
+	 	}
+	 }
+	 */
+
+===============EX 5.17                BOOKMARK MOVE ONTO Programming Projects
+
+/**
+ * evenlyDivisible
+ * @param two integer parameters
+ * @return true if the first parameter is evenly divisible by the second,
+ * or vice versa,
+ * returns false otherwise
+ */
+
+===============EX 5.18
+
+/**
+ * isAlpha
+ * @param a character param
+ * @return true if that character is either an uppercase or a lowercase alphabetic letter
+ */
+
+===============EX 5.19
+
+/**
+ * floatEquals
+ * @param 3 floating point values
+ * @return x
+ */
+
+===============EX 5.20
+
+/**
+ * reverse
+ * @param String
+ * @return x
+ */
+ 
+ 
+===============EX 5.21
+
+/**
+ * x
+ * @param x
+ * @return x
+ */
+
+===============EX 5.22
+
+/**
+ * x
+ * @param x
+ * @return x
+ */
+
+===============EX 5.23
+===============EX 5.24
+===============EX 5.25
+
+/**
+ * x
+ * @param x
+ * @return x
+ */
+
+===============EX 5.26
+
+
+
+===============EX 5.27
+===============EX 5.28
+===============EX 5.29
+===============EX 5.30
+===============EX 5.31
+===============EX 5.32
+
+

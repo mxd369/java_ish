@@ -1,0 +1,2090 @@
+===================
+
+Concordance.java
+
+
+Change the code so that after the comma, it says line.length() subtracted by two.
+
+
+Math Operators (MathBits)
+http://mathbits.com/MathBits/Java/DataBasics/Mathoperators.htm
+
+Java Math Operators (Jenkov)
+http://tutorials.jenkov.com/java/math-operators-and-math-class.html#java-math-operators
+
+Arithmetic Operators (JavaTutorialTV)
+https://www.youtube.com/watch?v=RmFbY14OvdA
+
+https://www.youtube.com/watch?v=ss7BtLrbxp4
+Math and Arithmetic Operators in Java (ProgrammingKnowledge)
+
+https://www.youtube.com/v/IQw7y6XecoE?start=63&end=240
+ 3m  creating and adding int data types (Sam Blackwell)
+ 
+ 
+===================
+ 
+ Dragons.java
+ 
+ https://www.youtube.com/watch?v=PJ2yolIV0es
+ 8m  Creating Blocks of Code with Curly Braces (Mastering Java Programming)
+ 
+ http://www.javawithus.com/tutorial/displaying-information-using-print-and-println-methods
+  Displaying Information using print() and println() Methods (Java With Us)
+  
+  https://www.youtube.com/v/VLILXsf4KTM?start=193&end=372
+ 3m  System.out.print("Welcome to Java"); (IntElligent Programming)
+ 
+
+===================
+
+CumulativeAverage.java
+
+
+https://www.youtube.com/watch?v=PJ2yolIV0es
+8m  Creating Blocks of Code with Curly Braces (Mastering Java Programming)
+
+https://beginwithjava.blogspot.com/2008/06/code-blocks.html
+Code Blocks (Begin With Java)
+
+http://math.hws.edu/javanotes/c3/s1.html#control.1.1
+Blocks (Javanotes)  
+  
+===================
+ 
+Registrar.java
+
+http://javadude.com/articles/comments.html
+Using the Right Comment in Java (JavaDude)
+
+http://cs-fundamentals.com/java-programming/java-comments-javadoc-single-multi-line.php
+Java Comments: Single-line, Multi-line and Javadoc
+ 
+https://www.youtube.com/watch?v=Uf-vyPiMmi0
+4m  Understanding basic comments in Java (Tom Klein Peter)
+   
+===================
+
+HailstoneFinal.java
+
+Set the variable n to 3 times n plus 1.
+    
+3m  creating and adding int data types (Sam Blackwell)
+https://www.youtube.com/v/IQw7y6XecoE?start=63&end=240
+
+ 
+===================
+
+BadGrep.java
+
+
+In the while statement, check to see if the size of the List called lines is larger than zero.
+
+
+https://www.tutorialspoint.com/java/util/arraylist_size.htm
+Java.util.ArrayList.size() Method (Tutorials Point)
+ 
+http://beginnersbook.com/2013/12/how-to-find-length-of-arraylist-in-java/
+How to find length of ArrayList in Java (BeginnersBook)
+
+https://www.youtube.com/v/e7U-wWdsp78?start=649&end=692
+1m  Using ArrayLists (BrandonioProductions)
+ 
+http://www.cafeaulait.org/course/week2/35.html 
+Relational Operators (Cafe au Lait)
+
+http://www.freejavaguide.com/relational_operators.htm
+Relational Operators (freejavaguide)
+
+===================
+
+Wizard.java
+
+Invoke the method called checkRep, which takes no parameters.
+
+
+10m  Declaring and Calling Methods (Freetechtorials)
+https://www.youtube.com/watch?v=cQ_aQDohrts
+
+How to Call a Method in Java (WikiHow)
+http://www.wikihow.com/Call-a-Method-in-Java
+
+===================
+
+BinarySearch.java
+
+3m  creating and adding int data types (Sam Blackwell)
+https://www.youtube.com/v/IQw7y6XecoE?start=63&end=240
+
+===================
+
+HanoiIterative.java
+
+Print out the numMoves variable so that if numMoves is 5, for example 1)
+a typical line of output is Number of Moves: 5 and 2)
+the next line of output will print on the next line.
+
+
+3m  String and Number Concatenation (thebennybox)
+https://www.youtube.com/v/m3tAF5TVwsA?start=366&end=512
+
+http://www.javatpoint.com/string-concatenation-in-java
+String Concatenation using + (java T point)
+ 
+https://www.youtube.com/v/W1GEMdHnCQE?start=152&end=590
+8m  Declaring & Initializing Variables, Displaying Text (Freetechtorials)
+
+
+===================
+
+HailStoneFinal.java
+
+Add n to the end of the list sequence.
+
+sequence.add(n);
+
+Java Collections - List (Jenkov)
+http://tutorials.jenkov.com/java-collections/list.html#add
+
+===================
+
+
+JottoGUI.java
+ 
+Add a comment above the declaration of newPuzzleButton that says "components to use in the GUI."
+
+
+Using the Right Comment in Java (JavaDude)
+http://javadude.com/articles/comments.html
+
+Java Comments: Single-line, Multi-line and Javadoc
+http://cs-fundamentals.com/java-programming/java-comments-javadoc-single-multi-line.php
+
+4m  Understanding basic comments in Java (Tom Klein Peter)
+https://www.youtube.com/watch?v=Uf-vyPiMmi0
+
+===================
+FindBinary.java
+
+Set the middle variable to the size of the array called a divided by 2.
+
+
+A Java array length example (alvin alexander)
+http://alvinalexander.com/java/java-array-length-example-length-method
+ 
+2m  Array Length (James Gillespie)
+https://www.youtube.com/watch?v=Jl2vtuz5bHk
+ 
+3m  creating and adding int data types (Sam Blackwell)
+https://www.youtube.com/v/IQw7y6XecoE?start=63&end=240
+
+
+===================
+Encoder.java
+
+
+Complete a for loop that will repeat the lines Encoder foo = new Encoder();
+and System.out.println(foo.interleave()); 5000 times.
+
+
+Java for loop (java2s)
+http://www.java2s.com/Tutorials/Java/Statement/Java_for_loop.htm
+
+Increment and Decrement (Javanotes)
+http://math.hws.edu/javanotes/c2/s5.html#basics.5.2
+
+7m  Incrementing and Decrementing Variables (Mastering Java Programming)
+https://www.youtube.com/watch?v=pSBXQlSfLXw
+
+Relational Operators (Cafe au Lait)
+http://www.cafeaulait.org/course/week2/35.html
+
+Relational Operators (freejavaguide)
+http://www.freejavaguide.com/relational_operators.htm
+
+===================
+FindBinary.java
+
+Make the first return statement run when x < a[middle],
+the second return statement run when x > a[middle],
+and the third return statement run in all other cases.
+
+
+ if-else and if-else-if statements (Home & Learn)
+ http://www.homeandlearn.co.uk/java/java_if_else_statements.html
+ 
+ 4m  else if Statement (Bucky Roberts)
+ https://www.youtube.com/watch?v=C0YRYVn_BeI
+ 
+ 2m  Creating an if statement (Brandonio Productions)
+ https://www.youtube.com/v/wzfovpZkeW4?start=224&end=318
+ 
+  if-else statement in java (Tutorials Point)
+https://www.tutorialspoint.com/java/if_else_statement_in_java.htm
+
+
+import java.util.Arrays;
+
+public class FindBinary {
+    
+    /**
+     * TODO: specification
+     */
+    public static int findBinary(int x, int[] a) {
+        int middle = a.length / 2;
+        if (x < a[middle]) {
+            return findBinary(x, Arrays.copyOfRange(a, 0, middle));
+        } else if (x > a[middle]) {
+            return (middle+1) + findBinary(x, Arrays.copyOfRange(a, middle+1, a.length));
+        } else {
+            return middle;
+        }
+    }
+}
+
+===================
+BadGrep.java
+
+8m  Declaring & Initializing Variables, Displaying Text (Freetechtorials)
+https://www.youtube.com/v/W1GEMdHnCQE?start=152&end=590
+
+===================
+
+Subsequences.java
+
+Set firstLetter equal to the first character in the String called word.
+
+Java.lang.String.charAt() Method (Tutorials Point)
+https://www.tutorialspoint.com/java/lang/string_charat.htm
+
+3m  String Part 2: charAt (Java) (Nathan Schutz)
+https://www.youtube.com/v/EmnyO6fiuL8?start=118&end=260
+
+Java – String charAt() Method example (BeginnersBook)
+http://beginnersbook.com/2013/12/java-string-charat-method-example/
+
+===================
+
+Soduku.java
+
+Cast the square root of N to an integer.
+
+Assignment Operators and Type Conversion (Javanotes)
+http://math.hws.edu/javanotes/c2/s5.html#basics.5.6
+
+4m  Type Casting (Isay Katsman)
+https://www.youtube.com/v/qJ5Dc8eLyqA?start=0&end=198
+
+3m  Type Conversion and Type Casting in Java (First Learner)
+https://www.youtube.com/v/xfT2lS1glEY?start=245&end=425
+
+Java Double To Int (JavaDevNotes)
+http://javadevnotes.com/java-double-to-int
+ 
+===================
+
+Subsequences.java
+
+Set result equal to everything except the first character of result.
+result = result.substring(1); // remove leading comma
+
+
+String substring() method (Tutorials Point)
+https://www.tutorialspoint.com/java/java_string_substring.htm
+
+Substring in Java (java T point)
+http://www.javatpoint.com/substring
+
+5m  String: substring (Nathan Schutz)
+https://www.youtube.com/v/US4v4SD0iiU?start=0&end=290
+  
+===================
+
+Pitch.java
+
+Create an integer named v and set its value to the field called value.
+
+3m  creating and adding int data types (Sam Blackwell)
+https://www.youtube.com/v/IQw7y6XecoE?start=63&end=240
+
+
+ 3m  int and double (Sam Blackwell)
+https://www.youtube.com/v/IQw7y6XecoE?start=263&end=413
+
+ 8m  Declaring & Initializing Variables, Displaying Text (Freetechtorials)
+ https://www.youtube.com/v/W1GEMdHnCQE?start=152&end=590
+
+
+  The int type (Home & Learn)
+  http://www.homeandlearn.co.uk/java/java_int_variables.html
+
+===================
+
+BreakingProperties.java
+
+Change the code so that the function getProperty always returns the proper type.
+public String getProperty(String key) { return (String)get(key); }
+
+Casting in Java (coders campus)
+https://howtoprogramwithjava.com/java-cast/
+
+8m  Declaring & Initializing Variables, Displaying Text (Freetechtorials)
+https://www.youtube.com/v/W1GEMdHnCQE?start=152&end=590
+ 
+Java Variable Assignment (Jenkov)
+http://tutorials.jenkov.com/java/variables.html#java-variable-assignment
+
+===================
+
+Find.java
+
+accessing java array elements
+http://tutorials.jenkov.com/java/arrays.html#accessing-java-array-elements
+
+
+Create a statement to check if the integer in the array at index i is equal to the parameter called x.
+
+if(a[i] == x){
+                return i;
+            }
+
+===================
+  
+Customer.java
+
+Dynamic Typing vs Static Typing (coders campus)
+https://howtoprogramwithjava.com/dynamic-typing-vs-static-typing/
+
+Dynamic typing vs. static typing (Oracle)
+https://docs.oracle.com/cd/E57471_01/bigData.100/extensions_bdd/src/cext_transform_typing.html
+
+3m  int and double (Sam Blackwell)
+https://www.youtube.com/v/IQw7y6XecoE?start=263&end=413
+
+8m  Declaring & Initializing Variables, Displaying Text (Freetechtorials)
+https://www.youtube.com/v/W1GEMdHnCQE?start=152&end=590
+ 
+===================
+
+Player.java
+
+Declare a variable called name of the appropriate type to hold a name that
+1) can only be accessed inside this class
+2) cannot be reassigned after being initialized.
+private final String name;
+
+
+8m  Declaring & Initializing Variables, Displaying Text (Freetechtorials)
+https://www.youtube.com/v/W1GEMdHnCQE?start=152&end=590
+
+  Java Variable Assignment (Jenkov)
+  http://tutorials.jenkov.com/java/variables.html#java-variable-assignment
+  
+  Java Access Modifiers - Public, Private, Protected (Java Made Easy)
+  http://www.java-made-easy.com/java-access-modifiers.html
+  
+  Objects (LearnJava)
+  http://www.learnjavaonline.org/en/Objects
+  
+  
+===================
+
+FinancialCalc.java
+
+Create two variables: an integer called skill and a string called name.
+Make it so both variables can be accessed from this class,
+from classes inside of the same package as this class,
+and from subclasses of this class.
+
+
+5m  float and double (Java)
+https://www.youtube.com/v/ulhVz3VAML4?start=11&end=307
+
+Addition of doubles in Java (Cafe au Lait)
+http://www.cafeaulait.org/course/week2/12.html
+ 
+===================
+
+protected int skill;
+protected String name;
+
+Java Access Modifiers - Public, Private, Protected (Java Made Easy)
+ 3m  int and double (Sam Blackwell)
+  
+===================
+
+Fib.java
+
+Create three variables of type long: fibPrev, fibPrevPrev, and fib (in that order) and give them all a value of 1.
+
+1m  Understanding Java Primitive Types: Long (Firebox Training)
+
+long fibPrev = 1;
+long fibPrevPrev = 1;
+long fib = 1;
+
+===================
+
+Primes.java
+
+http://www.cafeaulait.org/course/week2/34.html
+Booleans (Cafe au Lait)
+
+https://www.youtube.com/v/Ft9IsE5oCvo?start=17&end=260
+5m  Java Boolean Tutorial (Jose Vidal)
+
+===================
+
+Soduku.java
+
+After the word assert, write a statement that is the negation of numbers.contains(value).
+
+Logical Operators in Java (Cafe au Lait)
+assert !numbers.contains(value);
+
+7m Logical Operators in Java( AND, OR ,NOT) (Charger Games)
+http://www.cafeaulait.org/course/week2/45.html
+
+===================
+StringSplitter.java
+
+
+Create an if statement that checks to make sure that the String named haystack is an empty string.
+if(haystack.equals("")){
+
+
+How to implement Java's equals Method Correctly (sitepoint)
+https://www.sitepoint.com/implement-javas-equals-method-correctly/
+ 
+3m  How to compare two String objects == or equals method Java (InterviewDot Job)
+https://www.youtube.com/v/S2ORz10CxQ4?start=12&end=145
+
+What’s the difference between equals() and ==? (ProgrammerInterviewer.com)
+http://www.programmerinterview.com/index.php/java-questions/java-whats-the-difference-between-equals-and/
+ 
+Overriding equals method in Java (GeeksforGeeks)  
+http://www.geeksforgeeks.org/overriding-equals-method-in-java/
+
+===================
+Differentiator.java
+
+Make the if statement evaluate to true when the String variable expression does not have the value of the empty String.
+if (!expression.equals("")) {
+
+ How to implement Java's equals Method Correctly (sitepoint)
+ https://www.sitepoint.com/implement-javas-equals-method-correctly/
+ 
+ 3m  How to compare two String objects == or equals method Java (InterviewDot Job)
+https://www.youtube.com/v/S2ORz10CxQ4?start=12&end=145
+
+===================
+
+StringEquality.java
+
+Make the code print "same reference" if dog1 and dog2 refer to the same String,
+and "same value" if dog1 and dog2 have the same String value.
+
+Make the code print "same reference" if dog1 and dog2 refer to the same String,
+and "same value" if dog1 and dog2 have the same String value.
+
+Correct answer: dog1 == dog2
+Correct answer: dog1.equals(dog2)
+
+
+===================
+
+Midi.java
+
+In the if statement, check if the field of type Midi called midi refers to the null reference.
+
+if (midi == null) {
+
+10m  referential equality for objects (Jana Reddy)
+https://www.youtube.com/v/fAlRR2p9Le0?start=105&end=664
+
+What’s the difference between equals() and ==? (ProgrammerInterviewer.com)
+http://www.programmerinterview.com/index.php/java-questions/java-whats-the-difference-between-equals-and/
+
+===================
+
+Player.java
+
+Connect the two parts of the return statement so that both need to be true in order for the method to return true.
+return name.equals(other.name) && skill == other.skill;
+===================
+
+Dragon.java
+
+Create a Dragon object named bob with name Bob Smith and aged 6.
+Dragon bob = new Dragon("Bob", "Smith", 6);
+
+Objects (LearnJava)
+http://www.learnjavaonline.org/en/Objects
+
+https://www.tutorialspoint.com/java/java_object_classes.htm
+
+===================
+
+Concordance.java
+
+Loop through allLines using a new local String variable line2.
+Call the string variable line2 so that it is consistent with the parts of the method that are already complete.
+Use a foreach loop.
+
+for (String line2 : allLines) {
+
+
+
+For-each loop (Advanced or Enhanced For loop): (java T point)
+http://www.javatpoint.com/for-each-loop
+
+9m  For Each Loops (datanotfound)
+https://www.youtube.com/watch?v=KR3duiaxR1w
+
+===================
+
+Flower.java
+
+Create an array of integers called petalLengths that has eight positions.
+int[] petalLengths = new int[8];
+
+Java Arrays (Home & Learn)
+http://www.homeandlearn.co.uk/java/java_arrays.html
+
+
+===================
+
+Pitch.java
+
+Change the code to set MIDDLE_C to a Pitch with the value of 'C'.
+Look at the constructor if you are stuck.
+public static final Pitch MIDDLE_C = new Pitch('C');
+
+http://www.learnjavaonline.org/en/Objects
+Objects (LearnJava)
+
+===================
+
+HailstoneFinal.java
+
+Initialize sequence to point to a new, empty ArrayList object.
+Make sure you include in the initialization the type of objects that will be held in this ArrayList
+List<Integer> sequence = new ArrayList<Integer>();
+
+http://www.learnjavaonline.org/en/Objects
+
+===================
+
+Find.java
+
+Write a for loop that will step i through all the indices of array a,
+starting at index 0.
+
+for(int i= 0; i<a.length;++i){
+            if (a[i] == x) {
+                return i;
+            }
+        }
+        return a.length;
+
+The for loop in Java (Cafe au Lait)
+http://www.cafeaulait.org/course/week2/32.html
+
+4m  for Loops (thenewboston)
+https://www.youtube.com/watch?v=rjkYAs6gAkk
+
+Java for loop (java2s)
+http://www.java2s.com/Tutorials/Java/Statement/Java_for_loop.htm
+
+===================
+
+BinarySearch.java
+
+Write a for loop that will step i through all the indices of array a.
+
+for (int i = 0; i < a.length;++i){
+            if (x == a[i]) {
+                return i;
+            }
+        }
+
+===================
+
+Timespan.java
+
+Throw an appropriate unchecked exception with the message "requires start <= end".
+throw new IllegalArgumentException("requires start <= end");
+
+Objects (LearnJava)
+http://www.learnjavaonline.org/en/Objects
+
+How to throw exception in Java with example (BeginnersBook)
+http://beginnersbook.com/2013/04/throw-in-java/
+
+Exceptions (LearnJava)
+http://www.learnjavaonline.org/en/Exceptions
+
+
+===================
+
+Fib.java
+
+Create the main method, naming the parameter args.
+Don't forget both brackets.
+
+The main() method (cs.princeton.edu)
+http://www.cs.princeton.edu/courses/archive/spr96/cs333/java/tutorial/java/anatomy/main.html
+
+===================
+
+HailstoneFinal.java
+
+Make the method max return the integer m.
+4m  Java - Method Return Values (Berjanskii Web Development)
+
+return m;
+
+===================
+
+MyIterator.java
+
+Return the string s.
+return s;
+
+===================
+
+Create the main method, naming the parameter args.
+Don't forget both brackets.
+
+
+
+===================
+
+Find.java
+
+Make the method findB return -1 when it doesn't find x.
+
+return -1;
+
+===================
+
+Registrar.java
+
+Make the method header for the method loadPreregistration so that
+1) is accessible from other classes
+2) an instance of the class Registrar does not need to be created in order to access it
+3) it does not return anything and
+4) it takes no parameters.
+
+public static void loadPreregistration() {
+        // ...
+        registration.putIfAbsent("alyssa", new ArrayList<>(Arrays.asList("6.005", "7.33", "21W.759")));
+        // ...
+        registration.putIfAbsent("benbit", Arrays.asList("6.005", "7.33", "21W.759"));
+        // ...
+    }
+
+Java Static Methods, Variables, Static Block and Class with Example (crunchify)
+http://crunchify.com/java-static-methods-variables-static-block-and-class-with-example/
+
+Java Access Modifiers - Public, Private, Protected (Java Made Easy)
+http://www.java-made-easy.com/java-access-modifiers.html
+
+Objects (LearnJava)
+http://www.learnjavaonline.org/en/Objects
+
+===================
+
+BoardState.java
+
+Return the string representation of the StringBuilder object sb.
+return sb.toString();
+
+Java toString() Method (Tutorials Point)
+https://www.tutorialspoint.com/java/number_tostring.htm
+
+===================
+
+Dragon.java
+
+Add the ASCII value of firstName.charAt(i) to sum.
+sum += (int)firstName.charAt(i);
+
+http://www.javacoffeebreak.com/faq/faq0047.html
+How do I convert from a char to an int? (Java Coffee Break)
+
+===================
+
+Smelly2.java
+
+Edit the code so that in the very first if statement,
+it checks if tmp.charAt(2) is equal to the character 1.
+
+if (tmp.charAt(2) == '1' || tmp.charAt(2) == '3' || tmp.charAt(2) == 5 || tmp.charAt(2) == '7' || tmp.charAt(2) == '9') {
+
+http://www.cafeaulait.org/course/week2/24.html
+The char data type in Java (Cafe au Lait)
+
+===================
+
+Customer.java
+
+Convert the parameter passed to the setCustomerId method into an integer.
+int multiplicationFactor = (int)l;
+
+Convert long to int (Stack Overlow)
+https://stackoverflow.com/questions/4355303/how-can-i-convert-a-long-to-int-in-java
+
+===================
+
+QuestionAnswer.java
+
+Change the code so that isText returns true if s.charAt(0) is not equal to an octothorpe.
+return s.charAt(0) != '#';
+
+https://en.wikipedia.org/wiki/Number_sign
+The char data type in Java (Cafe au Lait)
+http://www.cafeaulait.org/course/week2/24.html
+
+===================
+
+String_rep1.java
+
+Declare an array of characters a that cannot be accessed outside this class.
+private char[] a;
+
+Objects (LearnJava)
+http://www.learnjavaonline.org/en/Objects
+
+The char data type in Java (Cafe au Lait)
+http://www.cafeaulait.org/course/week2/24.html
+
+Field Declaration Syntax (Jenkov)
+http://tutorials.jenkov.com/java/fields.html#field-declaration-syntax
+
+===================
+
+CharSet.java
+
+Name the method contains and have it take a character c as a parameter.
+public boolean contains(char c) {
+
+Writing your own Java Methods (Home&Learn)
+http://www.homeandlearn.co.uk/java/java_methods.html
+
+Functions (LearnJava)
+http://www.learnjavaonline.org/en/Functions
+
+Objects (LearnJava)
+http://www.learnjavaonline.org/en/Objects
+
+===================
+
+CharSet.java
+Make the method signature for contains signal that it must either return true or false.
+public boolean contains(char c) {
+
+===================
+
+JottoGUI.java
+
+Declare serialVersionUID with a primitive integer type that can represent more numbers than int can.
+Initialize it to 1.
+
+private static final long serialVersionUID = 1; // required by Serializable
+
+===================
+
+Dragon.java
+
+Make a tab print before the sentence.
+System.out.println("\t" + bob.firstName + " " + bob.lastName + ", who is " + bob.age + " years old," + " is my favorite dragon.");
+
+The String Literal (About.com)
+http://java.about.com/od/understandingdatatypes/a/The-String-Literal.htm
+
+7m  Escape Sequences: \" \\ \n \t \r (Java) (Nathan Schutz)
+https://www.youtube.com/watch?v=zubeUnxlXw4
+
+===================
+
+WordExtractor.java
+
+Set the variable REGEXP to the string: \\W
+
+The String Literal (About.com)
+http://java.about.com/od/understandingdatatypes/a/The-String-Literal.htm
+
+3m  Java String Literals (Ram N)
+https://www.youtube.com/watch?v=IuiyhgFN-vg
+
+7m  Escape Sequences: \" \\ \n \t \r (Java) (Nathan Schutz)
+https://www.youtube.com/watch?v=zubeUnxlXw4
+
+===================
+
+SocialServer.java
+
+Make out print the variable friend with a new line right after it.
+out.print(friend+"\n");
+
+The String Literal (About.com)
+http://java.about.com/od/understandingdatatypes/a/The-String-Literal.htm
+
+3m  Java String Literals (Ram N)
+https://www.youtube.com/watch?v=IuiyhgFN-vg
+
+7m  Escape Sequences: \" \\ \n \t \r (Java) (Nathan Schutz)
+https://www.youtube.com/watch?v=zubeUnxlXw4
+
+
+===================
+
+WordExtractor.java
+
+Change the code so that the second line of the string that text is set to would be the following if printed out:
+all the "words" which appear in the text; "words" are contiguous blocks of letters
+
+String text = "Takes in a block of English text with standard punctuation, and returns a list of " +
+                "all the \"words\" which appear in the text; \"words\" are contiguous blocks of letters " +
+                "with no other symbols in them.";
+
+The String Literal (About.com)
+http://java.about.com/od/understandingdatatypes/a/The-String-Literal.htm
+
+3m  Java String Literals (Ram N)
+https://www.youtube.com/watch?v=IuiyhgFN-vg
+
+7m  Escape Sequences: \" \\ \n \t \r (Java) (Nathan Schutz)
+https://www.youtube.com/watch?v=zubeUnxlXw4
+
+===================
+
+Concordance.java
+
+Change the code so that .length() is getting the length of this string: \"text_entry\": .
+
+final int lengthOfTextEntryCaption = " \"text_entry\": ".length();
+
+===================
+
+Dragon.java
+
+
+Create a method such that the line of output for printing a Dragon object with first name "Grace",
+last name "Hopper", and age 7,
+would look like the comment between the blanks.
+
+
+public String toString(){
+        return firstName + " " + lastName + " (" + age + " years old)";
+        //Grace Hopper (7 years old)
+	}
+
+
+
+Overriding toString() in Java (GeeksforGeeks)
+http://www.geeksforgeeks.org/overriding-tostring-method-in-java/
+
+String Concatenation (Stack Overflow)
+https://stackoverflow.com/questions/47605/string-concatenation-concat-vs-operator
+
+===================
+
+StringSplitter.java
+
+Set newHaystack equal to the String representation of after.
+Do this in one line.
+
+Out of hints
+
+newHaystack = after.toString();
+
+===================
+
+BoardState.java
+
+Return the string representation of the StringBuilder object sb.
+return sb.toString();
+
+===================
+
+Puzzler.java
+public class Puzzler {
+
+Name the class according to Java naming conventions.
+
+http://www.javatpoint.com/java-naming-conventions
+Java Naming Conventions (Java T Point)
+
+===================
+
+MatrixLibrary.java
+
+Make the Mat object I a constant.
+public static final Mat I = new Identity();
+
+What is a Constant? (coders campus)
+https://howtoprogramwithjava.com/what-is-a-constant/
+
+===================
+
+Flower.java
+
+Print the two variables,
+in the order they appear in the method dimensions,
+that are defined in the same scope as the print statements.
+
+public void dimensions() {
+        int height = 7;
+        for(int i = 0; i < 10; i++) {
+            int width = 0;
+            for(int j = 10; j > 0; j--) {
+                width = 4;
+            }
+        }
+        int radius = 10;
+        while(radius > 0) {
+            radius--;
+        }
+        
+        System.out.println(height);
+        System.out.println(radius);
+    }
+
+2m  Local Variables in Methods (LearningLad)
+https://www.youtube.com/v/8yKhIEEMkiE?start=21&end=124
+
+2m  Local Variables in For Loops (LearningLad)
+https://www.youtube.com/v/8yKhIEEMkiE?start=322&end=402
+
+
+===================
+
+Iterate.java
+
+Name the class according to Java naming conventions.
+
+
+===================
+
+Timespan.java
+
+Declare the start and end instance variables of type Date so
+that they can't be reassigned and can't be accessed outside this class.
+
+//start of the interval -- accessed only inside this class and unchangeable once set
+private final Date start;
+//end of the interval -- accessed only inside this class and unchangeable once set
+private final Date end;
+
+
+http://beginnersbook.com/2014/07/final-keyword-java-final-variable-method-class/
+Final Keyword In Java - Final variable, Method, and Class (BeginnersBook)
+
+https://howtoprogramwithjava.com/what-is-a-constant/
+What is a Constant? (coders campus)
+
+===================
+
+MyIterator.java
+
+Declare the missing instance variable needed by the methods below,
+so that it can't be accessed from outside this class and it can't be reassigned.
+private final ArrayList<String> list;
+
+Objects (LearnJava)
+http://www.learnjavaonline.org/en/Objects
+
+Final Keyword In Java - Final variable, Method, and Class (BeginnersBook)
+
+
+===================
+
+Factorial.java
+
+In Python, this method would be called compute_fact_in_thread.
+Name it according to Java naming conventions instead.
+
+private static void computeFactInThread(final int n) {
+
+===================
+
+MyIterator.java
+
+Declare an ArrayList of Strings called list that cannot be accessed outside this class or changed.
+
+Final Keyword In Java - Final variable, Method, and Class (BeginnersBook)
+http://beginnersbook.com/2014/07/final-keyword-java-final-variable-method-class/
+
+===================
+
+MyIterator.java
+
+Declare an ArrayList of Strings called list that cannot be accessed outside this class or changed.
+
+private final ArrayList<String> list;
+
+===================
+
+Registrar.java
+
+Change the code so that the field called registration is a map that maps strings to lists of strings.
+Make it so that this variable cannot be reassigned.
+
+private static final Map<String, List<String>> registration = new HashMap<>();
+
+Final Keyword In Java - Final variable, Method, and Class (BeginnersBook)
+http://beginnersbook.com/2014/07/final-keyword-java-final-variable-method-class/
+
+
+Java Map Example (Java Code Geeks)
+https://examples.javacodegeeks.com/java-basics/java-map-example/
+
+===================
+
+Concordance.java
+
+Tell the main method of the Concordance class that it may create an exception.
+public static void main(String[] args) throws Exception {
+
+
+Exceptions (LearnJava)
+http://www.learnjavaonline.org/en/Exceptions
+
+2m  Global Variables - Java (Glenn Hancock)
+https://www.youtube.com/v/VCPOuG4QwHE?start=231&end=326
+
+Global Variable vs Class Variable vs Instance Variable vs Local Variable (Java-Latte)
+https://java-latte.blogspot.com/2014/01/global-variable-vs-class-variable-vs.html
+
+===================
+
+Customer.java
+
+Make numberOfCustomers a global variable and make customerId an instance variable.
+public static int numberOfCustomers = 0;
+private int customerId = 0;
+
+
+Global Variable vs Class Variable vs Instance Variable vs Local Variable (Java-Latte)
+https://java-latte.blogspot.com/2014/01/global-variable-vs-class-variable-vs.html
+
+===================
+
+MyIterator.java
+
+Declare the missing instance variable needed by the methods below,
+so that it can't be accessed from outside this class and it can't be reassigned.
+protected final ArrayList<String> list;
+
+Objects (LearnJava)
+http://www.learnjavaonline.org/en/Objects
+
+Final Keyword In Java - Final variable, Method, and Class (BeginnersBook)
+http://beginnersbook.com/2014/07/final-keyword-java-final-variable-method-class/
+
+===================
+
+Timespan.java
+
+Declare the start and end instance variables of type Date so that they can't
+be reassigned and can't be accessed outside this class.
+
+//start of the interval -- accessed only inside this class and unchangeable once set
+private final Date start;
+
+//end of the interval -- accessed only inside this class and unchangeable once set
+private final Date end;
+
+
+Final Keyword In Java - Final variable, Method, and Class (BeginnersBook)
+
+===================
+
+Contains_v2.java
+break
+
+
+When the if statement inside the innermost for loop evaluates to true,
+stop execution of the innermost for loop.
+
+break statements (UPenn)
+https://www.cis.upenn.edu/~matuszek/General/JavaSyntax/break.html
+
+3m  Java Break and Continue commands Tutorial (Jose Vidal)
+https://www.youtube.com/watch?v=J_caS3ntng0
+
+===================
+
+PiGenerator.java
+
+Stop the execution of the while loop in the method piTerm if t is equal to the variable newt.
+break;
+
+Java Break and Continue commands Tutorial (Jose Vidal)
+https://www.youtube.com/watch?v=J_caS3ntng0
+
+===================
+
+Iterate.java
+
+Make the code immediately jump to the next iteration of the loop when i is even.
+continue;
+
+3m  Java Break and Continue commands Tutorial (Jose Vidal)
+
+===================
+
+RatNum.java
+
+Complete the method gcd using a ternary expression.
+Make it so that if b is zero, then the method returns a and if b is not zero,
+then the method calls gcd again with the first parameter as b and the second as a%b.
+
+return (b == 0) ? a : gcd(b, a % b);
+
+The ? : operator in Java (Cafe au Lait)
+http://www.cafeaulait.org/course/week2/43.html
+
+===================
+
+SubsequenceFinderImpl.java
+
+Set b2 to an empty array.
+int[] b2 = {};
+
+===================
+
+Encoder.java
+
+Complete a for loop that will repeat the lines Encoder foo = new Encoder();
+and System.out.println(foo.interleave()); 5000 times.
+
+for (int i = 0;i<5000 ;i++){
+            Encoder foo = new Encoder();
+            System.out.println(foo.interleave());
+        }
+
+===================
+
+MyIterator.java
+
+Declare an integer i.
+private int i;
+
+===================
+
+Concordance.java
+
+Create a variable called linesContainingWord.
+Make this variable a group of strings so that there can be no repeats of strings in this group.
+Set<String> linesContainingWord = index.get(word);
+
+Stuck? Maybe these will help.
+
+Java - The Set Interface (Tutorials Point)
+https://www.tutorialspoint.com/java/java_set_interface.htm
+
+
+===================
+
+Dragon.java
+
+Make the first print line print true if,
+according to the equals method defined, bob is equal to null. 
+Make the second print line print true if bob refers to null.
+
+System.out.println(bob.equals(null));
+System.out.println(bob == null);
+
+Stuck? Maybe these will help.
+
+Java null check equality (Stack Overflow)
+https://stackoverflow.com/questions/4501061/java-null-check-why-use-instead-of-equals
+
+===================
+
+Traveler.java
+
+Declare a group of Strings called sites that cannot contain more than one of the same String.
+public final Set<String> sites;
+
+===================
+
+BadGrep.java
+
+Create an import statement so that this class can use ArrayLists.
+ArrayList is in the java.util package.
+import java.util.ArrayList;
+
+Java Package (Core Java)
+http://www.studytonight.com/java/package-in-java.php
+
+===================
+
+FileSystem.java
+
+In the if statement, check if f.getParentFile() refers to nothing.
+if (f.getParentFile() == null) {
+
+===================
+
+Registrar.java
+
+Change the code so that the field called registration is a map that maps strings to lists of strings.
+Make it so that this variable cannot be reassigned.
+private static final Map<String, List<String>> registration = new HashMap<>();
+
+
+Stuck? Maybe these will help.
+
+
+http://beginnersbook.com/2014/07/final-keyword-java-final-variable-method-class/
+Final Keyword In Java - Final variable, Method, and Class (BeginnersBook)
+
+===================
+
+Pitch.java
+
+Use an if statement to check if the parameter called obj refers to the null reference.
+
+if (obj == null) { return false; }
+
+===================
+
+PowerMod.java
+
+Complete the Javadoc comment.
+
+	/**
+     * Computes base^exponent mod modulus.
+     *
+     * For example, if base = 2, exponent = 3, and modulus = 5,
+     * this method computes 2^3 mod 5 and returns 3.
+     * 
+     * @param base     base for exponentiation, requires base >= 0
+     * @param exponent exponent for exponentiation, requires exponent >= 0
+     * @param modulus  divisor for modulo operation, requires modulus > 0
+     * @return base^exponent mod modulus
+     */
+
+
+Stuck? Maybe these will help.
+
+
+Using the Right Comment in Java (JavaDude)
+http://javadude.com/articles/comments.html
+
+Java Comments: Single-line, Multi-line and Javadoc
+http://cs-fundamentals.com/java-programming/java-comments-javadoc-single-multi-line.php
+
+5m  Writing Javadoc Comments in Eclipse (Norm Krumpe)
+https://www.youtube.com/v/6XoVf4x-tag?start=230&end=505
+
+===================
+
+SimpleBuffer.java
+
+Create an assertion that checks to make sure that the string called text is not equal to null.
+assert text != null;
+
+
+Stuck? Maybe these will help.
+
+Java keyword: assert (CodeJava)
+http://www.codejava.net/java-core/the-java-language/java-keyword-assert
+
+===================
+
+Found.java
+
+Assert that the array a is sorted.
+Use the isSorted method defined in the class.
+assert isSorted(a); // remember to turn on assertions with -ea
+
+
+===================
+
+MitIdentifiers.java
+
+Complete the Javadoc comment to show that the method
+getMitId returns the 9-digit MIT identifier for username.
+
+	/**
+     * @param username username of person to look up
+     * @return the 9-digit MIT identifier for username.
+     * @throws NoSuchUserException if nobody with username is in MIT's database
+     */
+===================
+
+HailstoneFinal.java
+
+Complete the Javadoc comment such that max is given a parameter l (a lowercase L)
+and returns the largest element in l.
+
+    /**
+     * Find the largest element in a list.
+     * 
+     * @param l
+     *            list of elements. Requires l to be nonempty and all elements
+     *            to be nonnegative.
+     * @return the largest element in l
+     */
+     
+     
+===================
+
+Combinations.java
+
+Complete the Javadoc comment
+
+    /**
+     * Finds all subsets of a string.
+     *
+     * @return all subsets of the characters in s.  
+     * The characters in a subset are in any order with no repeats. 
+     * For example, combinations("cbc") might return 
+     * { "", "b", "c", "cb" } or it might return { "", "b", "c", "bc" }.
+     */
+
+===================
+
+BinarySearch.java
+
+Complete the block comment so that it says Same spec as find().
+Brute-force linear search implementation.
+
+    /*
+     Same spec as find(). Brute-force linear search implementation.
+     */
+
+===================
+
+JottoGUI.java
+
+Add a comment above the declaration of newPuzzleButton that says "components to use in the GUI."
+
+    // components to use in the GUI.
+
+===================
+
+MitIdentifiers.java
+
+Make the code catch any NoSuchUserException. Call the exception parameter e.
+} catch (NoSuchUserException e) {
+
+
+Stuck? Maybe these will help.
+
+How to throw exception in Java with example (BeginnersBook)
+http://beginnersbook.com/2013/04/throw-in-java/
+
+Try and Catch (LearnJava)
+http://www.learnjavaonline.org/en/Try_and_Catch
+
+
+===================
+
+Ex3.java
+
+Complete the try statement so that no matter how it is exited, "End foo" will always be printed.
+
+    public static int foo(int x){
+        System.out.println("Begin foo");
+        try{
+            int y = moo(x);
+            return y + 1;
+        }finally{
+            System.out.println("End foo");
+        }
+    }
+
+Stuck? Maybe these will help.
+
+
+Java Finally block - Exception handling (BeginnersBook)
+http://beginnersbook.com/2013/04/throw-in-java/
+
+Try-finally clauses defined and demonstrated (Java World)
+http://www.learnjavaonline.org/en/Try_and_Catch
+
+Flow in try catch finally
+http://beginnersbook.com/2013/05/flow-in-try-catch-finally/
+
+
+
+===================
+
+Wizard.java
+
+Change the code so that it catches any InterruptedException.
+Name the exception e.
+
+for (Thread thread : threads) {
+            try {
+                thread.join();
+            }
+            catch (InterruptedException e) {
+                throw new AssertionError("don't interrupt my testing");
+            }
+        }
+
+===================
+
+RatNum.java
+
+Change the declaration of RatNum so that it may throw an ArithmeticException.
+    public RatNum(int n, int d) throws ArithmeticException {
+
+===================
+
+PowerMod.java
+
+Make the method powerMod throw a runtime exception with the message "not implemented yet".
+throw new RuntimeException("not implemented yet");
+
+
+===================
+
+Timespan.java
+
+Throw an appropriate unchecked exception with the message "requires start <= end".
+throw new IllegalArgumentException("requires start <= end");
+
+
+Stuck? Maybe these will help.
+
+  Objects (LearnJava)
+http://www.learnjavaonline.org/en/Objects
+===================
+
+Concordance.java
+
+Tell the main method of the Concordance class that it may create an exception.
+public static void main(String[] args) throws Exception {
+
+
+===================
+
+HailstoneFinal.java
+
+Declare the class.
+Make sure the class matches the name of this file.
+
+
+public class HailstoneFinal {
+
+Controlling Access to Members of a Class (Oracle Docs)
+https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+
+
+===================
+
+RatNumPrimes.java
+
+Create a structure called Sign that
+1.) can only be accessed by this class
+
+and
+
+2.) can only take the value of one of the three predefined constants.
+
+    private enum Sign {
+        NEGATIVE,
+        ZERO,
+        POSITIVE
+    }
+
+
+Stuck? Maybe these will help.
+
+  Enum Types (Java Docs)
+  https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
+  
+  
+  Objects (LearnJava)
+  http://www.learnjavaonline.org/en/Objects
+
+
+===================
+
+Puzzler.java
+
+Declare the class.
+Make sure the class matches the name of this file and make it public.
+
+https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+Controlling Access to Members of a Class (Oracle Docs)
+
+===================
+
+Registrar.java
+
+Make the method header for the method loadPreregistration so that
+1) is accessible from other classes
+2) an instance of the class Registrar does not need to be created in order to access it
+3) it does not return anything and
+4) it takes no parameters.
+Stuck? Maybe these will help.
+
+public static void loadPreregistration() {
+
+  Java Static Methods, Variables, Static Block and Class with Example (crunchify)
+  http://crunchify.com/java-static-methods-variables-static-block-and-class-with-example/
+  
+  Objects (LearnJava)
+  http://www.learnjavaonline.org/en/Objects
+
+===================
+
+String_rep1.java
+
+Declare an array of characters a that cannot be accessed outside this class.
+Stuck? Maybe these will help.
+
+private char[] a; 
+
+  Objects (LearnJava)
+http://www.learnjavaonline.org/en/Objects
+
+===================
+
+MyIterator.java
+
+Declare the missing instance variable needed by the methods below,
+so that it can't be accessed from outside this class and it can't be reassigned.
+private final ArrayList<String> list;
+
+Stuck? Maybe these will help.
+
+  Objects (LearnJava)
+  Final Keyword In Java - Final variable, Method, and Class (BeginnersBook)
+
+===================
+
+Player.java
+
+Declare a variable called name of the appropriate type to hold a name that
+1) can only be accessed inside this class
+2) cannot be reassigned after being initialized.
+private final String name;
+
+Stuck? Maybe these will help.
+
+  Objects (LearnJava)
+http://www.learnjavaonline.org/en/Objects
+===================
+
+Dragon.java
+
+Declare the class.
+public class Dragon {
+
+Stuck? Maybe these will help.
+
+  Defining a Class (cs.princeton.edu)
+  http://www.cs.princeton.edu/courses/archive/spr96/cs333/java/tutorial/java/anatomy/classdef.html
+  
+  A Simple Class Definition (cs.princeton.edu)
+  http://www.cs.princeton.edu/courses/archive/spr96/cs333/java/tutorial/java/nutsandbolts/classdef.html
+  
+  Objects (LearnJava)
+  http://www.learnjavaonline.org/en/Objects
+
+===================
+
+Registrar 
+
+In the getRegistration method, return the field that is a map.
+    return registration;
+
+Stuck? Maybe these will help.
+
+  Accessing Java Fields (Jenkov)
+  http://tutorials.jenkov.com/java/fields.html#naming-fields
+
+===================
+
+Dragon.java
+
+Create another constructor for the Dragon class that takes the three parameters
+that the premade constructor requires.
+    public Dragon(String f, String l, int a){
+        firstName = f;
+        lastName = l;
+        age = a;
+    }
+
+Stuck? Maybe these will help.
+
+4m  Creating Constructors (MercifiesProductions)
+https://www.youtube.com/v/XznNdY3Bfvg?start=67&end=256
+
+Objects (LearnJava)
+http://www.learnjavaonline.org/en/Objects
+
+===================
+
+Flower.java
+
+Declare and initialize a variable so that the main method will print out:
+There is 1 flower! 
+Now, there are 2 flowers!
+
+static int numberOfFlowers = 0;
+
+Stuck? Maybe these will help.
+
+  Objects (LearnJava)
+  http://www.learnjavaonline.org/en/Objects
+  
+  Static and Non-static Fields (Jenkov)
+  http://tutorials.jenkov.com/java/fields.html#static-and-non-static-fields
+
+===================
+
+Dragon.java
+
+Declare the missing instance variable needed by the methods below.
+Make it unable to be accessed from outside this class and have an initial value of zero.
+
+private int age = 0;
+
+
+Stuck? Maybe these will help.
+
+  Initial Field Value (Jenkov)
+  http://tutorials.jenkov.com/java/fields.html#initial-field-value
+  
+===================
+
+Concordance.java
+
+Make the for loop step through the ArrayList that is a field of this class.
+
+for (String line2 : allLines) {
+
+===================
+
+Sudoku.java
+
+In the print function of the ConcreteSudoku2 class,
+call the print() method of the ConcreteSudoku1 class.
+
+public void print() {
+        ConcreteSudoku1.print();
+    }
+
+Stuck? Maybe these will help.
+
+ m  Using Static Methods of Another Class (Professor Saad)
+https://www.youtube.com/watch?v=z32TCilIq20
+
+===================
+
+Timespan.java
+
+Make copies of the Date objects referred to by the start and end parameters,
+and put them into the start and end instance variables.
+
+Get Hint:
+Use this.start and this.end to refer to the instance variables.
+
+        this.start = new Date(start.getTime());
+        this.end = new Date(end.getTime());
+
+
+Stuck? Maybe these will help.
+
+  Methods and Constructors (cis.upenn.edu)
+  https://www.cis.upenn.edu/~matuszek/cit591-2011/Pages/python-to-java.html
+  
+  this keyword in Java (Java Beginners Tutorial)
+  http://javabeginnerstutorial.com/core-java-tutorial/this-keyword-in-java/
+
+===================
+
+Sudoku.java
+
+Change the Sudoku type declaration so that Sudoku can contain only method signatures,
+not any method implementations.
+public interface Sudoku {
+
+Stuck? Maybe these will help.
+
+
+6m  Java Interface - With Example (JavaTutorialTV's channel)
+https://www.youtube.com/v/NnZQ-C0x4hs?start=0&end=318
+
+===================
+
+Crawler.java
+
+Complete the code so that the Worm class must create all the methods defined in the Runnable interface.
+    private class Worm implements Runnable {
+
+Stuck? Maybe these will help.
+
+6m  Java Interface - With Example (JavaTutorialTV's channel)
+https://www.youtube.com/v/NnZQ-C0x4hs?start=0&end=318
+
+===================
+
+Tree.java
+
+Declare the type Tree so that Java only allows it to have method signatures,
+not method implementations.
+
+public interface Tree {
+    // TODO    
+}
+
+===================
+
+Expression.java
+
+Create a method called isEmpty that
+1) returns a boolean and
+2) cannot be overridden in implementing classes.
+
+    static boolean isEmpty(String str){
+        return str == null;
+    }
+
+Stuck? Maybe these will help.
+
+  Java Interface Static Method (JournalDev)
+http://www.journaldev.com/2752/java-8-interface-changes-static-method-default-method
+
+===================
+
+Grep.java
+
+Declare the class Producer so that it must implement the methods of the interface named Runnable.
+class Producer implements Runnable {
+
+
+===================
+
+Expression.java
+
+Complete the declaration so that Expression is a group of related methods with empty bodies
+public interface Expression {
+
+
+===================
+
+Dragon.java
+
+Create the properly named method that will override a method in the Object class.
+
+    public int hashCode(){
+        return firstName.hashCode() * firstName.hashCode() + lastName.hashCode() + age;
+    }
+
+
+Stuck? Maybe these will help.
+
+Equals and Hash Code (JavaRanch)
+http://www.javaranch.com/journal/2002/10/equalhash.html
+  
+6m  hashcode() in Java with an Example (Jana Reddy)
+https://www.youtube.com/v/fAlRR2p9Le0?start=886&end=1189
+
+===================
+
+Pitch.java
+
+Change the code so that the equals method takes any object as a parameter.
+Name the parameter obj.
+
+    public boolean equals(Object obj) {
+
+Stuck? Maybe these will help.
+
+
+  java.lang.Object Class
+https://www.tutorialspoint.com/java/lang/java_lang_object.htm
+
+===================
+
+DurationB.java
+
+Complete the equals method so that two DurationBs are deemed equal if their lengths are the same.
+Use the getLength function.
+
+return this.getLength() == thatDuration.getLength();
+
+Out of hints
+Stuck? Maybe these will help.
+
+Equals and Hash Code (JavaRanch)
+http://www.javaranch.com/journal/2002/10/equalhash.html
+
+5m  equals() in Java
+https://www.youtube.com/v/fAlRR2p9Le0?start=602&end=886
+
+===================
+
+DurationB.java
+
+Add a line that fulfills the comment // asserts that superclass has this method; compile-time error if not.
+
+@Override
+
+Stuck? Maybe these will help.
+
+  Overriding Methods in Java? - Always use @Override annotation (JournalDev)
+  Java - Overriding (Tutorials Point)
+
+
+===================
+
+Customer.java
+
+Create a Customer object named sarah.
+Stuck? Maybe these will help.
+
+        Customer sarah = new Customer();
+
+https://www.youtube.com/v/1qLzmHoGLaQ?start=331&end=425
+2m  Default Constructor (LearningLad)
+
+===================
+
+Customer.java
+
+Check if sarah is of the Customer type.
+if(sarah instanceof Customer) {
+
+Stuck? Maybe these will help.
+
+  The instsanceof Keyword (java2s)
+http://www.java2s.com/Tutorial/Java/0060__Operators/TheinstanceofKeyword.htm
+
+===================
+
+DurationB.java
+
+Make thatObject into a DurationB object called thatDuration so that it can be compared to this DurationB object.
+
+DurationB thatDuration = (DurationB) thatObject;
+
+===================
+
+BreakingProperties.java
+
+Change the code so that the function getProperty always returns the proper type.
+public String getProperty(String key) { return (String)get(key); }
+
+===================
+
+SyntaxErrorException.java
+
+Make the constructor call the constructor of the Exception class, passing msg as a parameter.
+
+super(msg);
+
+Stuck? Maybe these will help.
+
+Super keyword in Java with example (BeginnersBook)
+http://beginnersbook.com/2014/07/super-keyword-in-java-with-example/
+
+===================
+
+Zipf.java
+
+Make the NoWordsException class inherit all the properties of the Exception class.
+
+    public static class NoWordsException extends Exception {
+        
+    }
+
+Stuck? Maybe these will help.
+
+  Inheritance (LearnJava)
+  http://www.learnjavaonline.org/en/Inheritance
+===================
+
+CountingList_subclassing.java
+
+Make the return statement call the add method of ArrayList, passing e as a parameter.
+        return super.add(e);
+
+Stuck? Maybe these will help.
+
+  Super keyword in Java with example (BeginnersBook)
+  http://beginnersbook.com/2014/07/super-keyword-in-java-with-example/
+  
+  Using the super keyword (Tutorials Point)
+  https://www.tutorialspoint.com/java/java_overriding.htm#using_super_keyword
+  
+===================
+
+Zipf.java
+
+Change the declaration of the class NoWordsException so that it inherits fields and methods from the class Exception.
+public static class NoWordsException extends Exception {
+
+===================
+
+Run.java
+
+Declare the interface Run that inherits the methods of the interface Runnable.
+
+public interface Run extends Runnable {
+    public void done();
+}
+
+
+Stuck? Maybe these will help.
+
+  Java Interfaces - Extending Interfaces (Tutorials Point)
+  https://www.tutorialspoint.com/java/java_interfaces.htm
+
+===================
+
+TournamentExample.java
+
+Create two variables: an integer called skill and a string called name.
+Make it so both variables can be accessed from this class,
+from classes inside of the same package as this class,
+and from subclasses of this class.
+
+        protected int skill;
+        protected String name;
+
+===================
+
+Customer.java
+
+Check if sarah is of the Customer type.
+
+if(sarah instanceof Customer) {
+
+===================
+
+Zipf.java
+
+
+Create a nested class called MultipleCommonWordsException.
+
+    class MultipleCommonWordsException {
+        
+    }
+
+
+Stuck? Maybe these will help.
+
+  Java - Inner Classes (Tutorials Point)
+https://www.tutorialspoint.com/java/java_innerclasses.htm
+
+===================
+
+TransactionMain.java
+
+Declare a class called Transaction that is package-private.
+Don't forget both curly braces.
+
+class Transaction {
+
+}
+
+Out of hints
+Stuck? Maybe these will help.
+
+  Controlling Access to Members of a Class (Oracle Docs)
+  https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+
+===================
+
+Sudoku.java
+
+Create four top level classes that all implement the Sudoku interface.
+Name each class ConcreteSudokuN where N is the number 1, 2, 3,
+or 4 (number the classes in order of appearance in the file).
+
+class ConcreteSudoku1 implements Sudoku { }
+class ConcreteSudoku2 implements Sudoku { }
+class ConcreteSudoku3 implements Sudoku { }
+class ConcreteSudoku4 implements Sudoku { }
+
+Stuck? Maybe these will help.
+
+  Using multiple classes in Java program (Programming Simplified)
+
+===================
+
+Zipf.java
+
+Create a nested class called NoWordsException so that it can be accessed
+by other classes without having to create an instance of the Zipf class.
+
+
+    public static class NoWordsException extends Exception {
+        
+    }
+
+
+Java - Inner Classes (Tutorials Point)
+https://www.tutorialspoint.com/java/java_innerclasses.htm
+
+===================
+
+FortuneServer.java
+
+Pass an instance of the Runnable class as an argument.
+new Thread(new Runnable() {
+
+
+Stuck? Maybe these will help.
+
+  Java - Inner Classes (Tutorials Point)
+
+===================
+
+RatNumPrimes.java
+
+Create a structure called Sign that
+1.) can only be accessed by this class
+and
+2.) can only take the value of one of the three predefined constants.
+
+
+    private enum Sign {
+        NEGATIVE,
+        ZERO,
+        POSITIVE
+    }
+
+===================
+===================
+===================
+===================
+===================
+===================
+===================
+===================
+===================
+===================
+===================
+===================
+===================
+===================
+===================
+===================
+
+===================
+===================
+===================
+===================
+===================
+===================
+===================
+===================
+
+===================
+===================
+===================
+===================

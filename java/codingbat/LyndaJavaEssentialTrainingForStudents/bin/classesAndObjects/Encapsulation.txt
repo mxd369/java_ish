@@ -1,0 +1,27 @@
+Benefits
+  Hides the instance data definition
+  Protects the integrity instance data
+  Hides the method implementations
+  Prevents outside access with protective barrier
+
+
+Checking Account:
+  Balanace
+    Private
+    Updated using method
+  Withdraw
+    Checks balance
+    Applies withdrawal fee
+
+Concrete example(of encapsulation):
+So let's think about a checking account.
+Inside a checking account you have a balance.
+It's declared as private so it can only be updated using a method.
+One of the operations that you can perform on your
+balance is you can withdraw money.
+The withdraw method checks to make sure the balance is greater
+than the withdrawal amount prior to reducing the balance.
+This provides a way to make sure the customer cannot get overdrawn
+by withdrawing more money than what is in the account.
+Some banks might also charge a withdrawal fee.
+That logic could be included in the method as well.

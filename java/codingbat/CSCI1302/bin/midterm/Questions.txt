@@ -1,0 +1,51 @@
+========================================
+========================================
+========================================
+========================================Code Writing Section
+Please clearly write your answers. Unless specified otherwise
+you do not need to include javadoc comments in the code that you write for this section
+
+=====================17.
+(15 Points)
+
+An Armstrong number is a 3 digit number for which the sum of the cubes of its digits are
+equal to the number.
+An example of an Armstrong number is 153 as 153 = 1^3 + 5^3 + 3^3
+write a java code snippet that prints out all positive Armstrong numbers without using any
+string functions
+
+use an array
+
+=====================18.
+(15 Points)
+
+(A)
+
+In a class called Search, implement a static method called findFirstN that
+takes in an array of Object types, an Object x (you can assume x is never null),
+and an integer n. It returns the first n items in the array that match x (as declared
+by the .equals method returning true). Thus the method returns an array of size n 
+of Object references, call it resultAry. If in the original array there are fewer
+than n items that match x, the rest of resultAry should be left null. Your
+implementation should not cause any exceptions.
+
+
+=====================18.
+(10 Points)
+
+(B)
+
+[Bonus Questions] Assume we are using JUnit. Write a simple testcase
+(i.e. a single test method; no need to write a complete tester class) to test your
+implementation of Search.findFirstN
+
+=====================19.
+(10 points)
+
+[Bonus Question] Write a public, static, variadic method method called sumOfSquares
+that computes the integer sum of squares of a variable number of integer parameters.
+For example, sumOfSquares(1,2,3) would return 14 because
+1^2 + 2^2 + 3^2 = 1 + 4 + 9 = 14.
+
+variadic = num of args is not fixed
+

@@ -1,0 +1,31 @@
+===================PP 7.1
+
+PP 7.1
+
+Design and implement an application that reads an arbitrary number of integers that are in the range
+0-50 inclusive and counts how many occurrences of each are entered.
+After all input has been processed, print all of the values (with the number of occurrences)
+that were entered one or more times.
+
+
+ch7/10632277-1
+
+Program Plan:
+  -This program counts the number of each value entered from the keyboard.
+  -All the values which are entered between 0-50 are counted.
+  -Display the numeric value with frequency.
+
+
+Program Name: Count.java
+
+
+===================PP 7.2
+===================PP 7.3
+===================PP 7.4
+===================PP 7.5
+===================PP 7.6
+===================PP 7.7
+===================PP 7.8
+===================PP 7.9
+===================PP 7.10
+===================PP 7.11

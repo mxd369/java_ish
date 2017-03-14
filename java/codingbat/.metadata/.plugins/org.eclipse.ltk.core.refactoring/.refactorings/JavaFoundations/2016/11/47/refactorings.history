@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ch13.StackADT&apos; to &apos;StackADTmyVersion&apos;&#x0A;- Original project: &apos;JavaFoundations&apos;&#x0A;- Original element: &apos;ch13.StackADT&apos;&#x0A;- Renamed element: &apos;ch13.StackADTmyVersion&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;StackADT&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ch13{StackADT.java[StackADT" matchStrategy="1" name="StackADTmyVersion" qualified="false" references="true" similarDeclarations="false" stamp="1479533307528" textual="false" version="1.0"/>
+</session>

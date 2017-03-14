@@ -1,0 +1,80 @@
+// ************************* One Way To Link Nodes Start
+Linking Nodes ::
+
+ListNode <String> start = new ListNode<String>("Apple",
+						  new ListNode<String>("Banana",
+						  new ListNode<String>("Cherry",null)));
+
+
+// How to output the list
+
+System.out.println(start.getValue());
+System.out.println(start.getNext().getValue());
+System.out.println(start.getNext().getNext().getValue());
+
+
+// What the list looks like
+Output ::
+
+Node      
+Apple     Node
+MemRef -> Banana    Node
+          MemRef -> Cherry
+                    Node
+                    null
+// ************************* One Way To Link Nodes End
+// ************************* 2nd Way To Link Nodes Start
+Linking Nodes ::
+
+// it is not common to name each node inside of the list
+ListNode <String> a = new ListNode<String>("Cherry", null);
+ListNode <String> b = new ListNode<String>("Banana", a);
+ListNode <String> c = new ListNode<String>("Apple", b);
+
+
+System.out.println(c.getValue()); // node at the beginning of the list
+System.out.println(c.getNext().getValue()); // node that is next
+System.out.println(c.getNext().getValue().getValue()); // node that is next
+
+
+
+Output ::
+  Apple
+  
+ c           b          a
+ Node        Node       Node
+ Apple    _> Banana  _> Cherry
+ MemRef _|   MemRef _|  null
+  
+  
+
+// ************************* 2nd Way To Link Nodes End
+// ************************* How To Print Nodes Start
+
+Printing Nodes ::
+
+ListNode<String> start = new ListNode<String>("Apple",
+						 new ListNode<String>("Banana",
+						 new ListNode<String>("Cherry",null)));
+
+// using a while loop
+while(start != null) // infinite-loop, never progressing to next node, must add start.getNext()
+{
+	System.out.println(start.getValue());
+	// get next
+	start = start.getNext();
+}
+
+Output ::
+
+Apple
+Banana
+Cherry
+
+
+Node        Node        Node
+Apple    _> Banana   _> Cherry
+MemRef _|   MemRef _|   null
+
+
+// ************************* How To Print Nodes End

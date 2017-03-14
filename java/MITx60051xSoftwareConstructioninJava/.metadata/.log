@@ -1,0 +1,92 @@
+!SESSION 2016-10-15 16:04:48.598 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/michaeldang/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/michaeldang/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-15 16:07:50.672
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2016-10-15 16:11:07.894 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/michaeldang/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -data file:/Users/michaeldang/Desktop/programming/MITx60051xSoftwareConstructioninJava/ -product org.eclipse.epp.package.java.product -keyring /Users/michaeldang/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-15 16:11:16.859
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 16:41:24.677
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 16:44:00.290
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 16:44:08.258
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 16:46:04.834
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 16:47:03.777
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 16:47:22.339
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 16:48:40.334
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 16:48:50.517
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 16:49:08.755
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 16:50:14.026
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 16:50:28.811
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 16:51:28.002
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 17:38:34.725
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 17:38:46.854
+!MESSAGE eclipseLog: error: /exercise/1008  server down or network connection problem?
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 17:38:46.855
+!MESSAGE eclipseLog: error: /getExercises/basic  server down or network connection problem?
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 17:38:48.498
+!MESSAGE eclipseLog: error: /getExercises/basic  server down or network connection problem?
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 17:38:48.678
+!MESSAGE eclipseLog: error: /getExercises/basic  server down or network connection problem?
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 17:38:50.983
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 17:38:57.040
+!MESSAGE eclipseLog: error: /getExercises/basic 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 17:39:13.089
+!MESSAGE eclipseLog: error: /getExercises/basic  server down or network connection problem?
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 17:39:13.090
+!MESSAGE eclipseLog: error: /getExercises/basic  server down or network connection problem?
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 17:39:17.901
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 17:40:29.413
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-10-15 17:41:33.168
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok

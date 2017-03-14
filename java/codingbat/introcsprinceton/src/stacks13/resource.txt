@@ -1,0 +1,3 @@
+http://algs4.cs.princeton.edu/13stacks/DoublyLinkedList.java.html
+
+http://algs4.cs.princeton.edu/13stacks/

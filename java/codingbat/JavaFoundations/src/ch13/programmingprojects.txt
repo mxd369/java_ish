@@ -1,0 +1,20 @@
+===================PP 13.1
+
+Complete the implementation of the LinkedStack<T> class by providing the definitions for the
+peek, size, isEmpty, and toString methods.
+
+12059895-1
+
+Program Plan:
+  Define the Stack data structure
+  Define the a class for a node in a linked list
+  Define the class to represent the linked implementation of a stack
+ 
+===================PP 13.2
+===================PP 13.3
+===================PP 13.4
+===================PP 13.5
+===================PP 13.6
+===================PP 13.7
+===================PP 13.8
+===================PP 13.9
