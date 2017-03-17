@@ -1,0 +1,77 @@
+0=================how to install and configure android studio
+Java=================java
+1=================introduction to android with android studio
+src/main/res
+  drawable
+  layout
+  menu
+  values
+
+Vertical Linear Layout  (stacks vertically)
+Horizontal Linear Layout(stacks horizontally)
+Grid Layout
+
+res/values/dimens.xml
+2===================Linear Layout, Responding to User Input, and Toasts
+3===================ListView,ImageView,ListAdapter,LayoutInflator,Views,ViewGroups,More
+
+activity_main.xml
+<ListView
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/theListView"></ListView>
+
+MainActivity.java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+	setContentView(R.layout.activity_main);
+	//all the data I want to put in the ListView
+	String[] favoriteTVShows = {"Pushing Daisies", "Better Off Ted", "Twin Peaks", "Freaks and Geeks", "Orphan Black", "Walking Dead", "Breaking Bad", "The 400", "Alphas", "Life on Mars"};
+	
+	//Create a ListAdapter that the list view can work with
+	ListAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, favoriteTVShows);
+	
+	//ListView itself
+	ListView theListView = (ListView) findViewById(R.id.theListView);
+	
+	//tell the list view what data
+	theListView.setAdapter(theAdapter);
+	
+	//provder for an option to catch clicks
+	theListView.setOnItemClickListener(new, AdapterView.OnItemClickListener(){
+	    AdapterView.OnItemClickListener() {
+		    @Override
+			public void onItemClick(AdapterView<?> adapterView, View view, int i, long l){
+			    String tvShowPicked = "You selected " + 
+			}
+		}
+	});
+
+   }
+}
+
+4===================menus & dialogs
+5===================multiple activities
+6===================fix android studio errors
+7===================spinners and layouts
+8===================uml & app building
+9===================styles & themes
+10===================android fragments
+11===================multipane fragments
+12===================fragment layouts
+13===================fragment layouts 2
+14===================translation app & json
+15===================XML Parsing & more
+16===================text to speech and speech to text
+17===================shared preferences preference manager
+18===================broadcasts services and files
+19===================notifications & alarms
+20===================sqlite & cursors
+21===================content providers content resolvers
+22===================android text messaging
+23===================android and google maps
+24===================google maps get directions
+25===================navigation drawer
+26===================android tab layouts
+27===================viewpager pageadapter

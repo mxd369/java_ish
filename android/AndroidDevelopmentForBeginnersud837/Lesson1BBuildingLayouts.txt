@@ -1,0 +1,130 @@
+View Groups
+
+
+
+Here are the words we introduced in this video:
+
+ViewGroups
+Root View
+Parent
+Child
+Sibling
+
+Child Views
+  Imageview
+  TextView
+Parent Views
+  LinearLayout(View Group) 
+  RelativeLayout(View Group)
+
+
+Types of ViewGroups
+Linear Layout
+  Vertical Column
+  Horizontal row
+
+View Groups
+<LinearLayout
+    android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	//child
+	<TextView
+	    android:text="Guest List"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	//child
+	<TextView
+	    android:text="Kunal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+</LinearLayout>
+
+================
+Linear Layout
+
+LinearLayout.html
+
+horizontal linear
+================
+Width and Height
+
+match_parent
+ViewGroup layout parameter
+
+Different widths on child views
+
+200dp
+wrap_content
+match_parent
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <TextView
+        android:text="VIP List"
+        android:layout_width="wrap_content"
+        android:layout_height="40"
+        android:background="#4CAF50"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Kunal"
+        android:layout_width="100"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Kagure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Lyla"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#4CAF50"
+        android:textSize="24sp" />
+
+</LinearLayout>
+
+================
+Evenly Spacing Out Views
+
+portrait Mode
+landscape Mode
+Tablet Landscape Mode
+
+Layout Weight
+http://developer.android.com/guide/topics/ui/layout/linear.html
+
+http://stackoverflow.com/questions/3470420/is-it-possible-to-evenly-distribute-buttons-across-the-width-of-an-android-linear.html
+================
+Evenly Spacing Out Views - Solution
+================
+Layout Weight
+================
+
+================
+================
+================
+================
+================
+================
+================
+================
+================
+================
+================
+================
+================
+================
+================
+================

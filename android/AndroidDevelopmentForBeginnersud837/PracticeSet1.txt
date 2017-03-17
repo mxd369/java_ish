@@ -1,0 +1,208 @@
+Android Development for Beginners
+==========
+Welcome to Practice Set One
+==========
+The Installation Process
+
+Installing Android Studio
+1 Install the JDK
+2 Install Android Studio
+
+==========
+Emulator
+
+==========
+Create the Birthday Card App
+
+Step1: Select the Views
+Step2: Position the Views
+Step3: Style the Views
+==========
+Step 1:(Views)Create the Birthday Card App - Solution
+
+What Views are included in this layout?
+2 TextViews
+1 ImageViews
+==========
+Step 2: Position The Views
+RelativeLayout or LinearLayout
+
+What view group should you use?
+
+Relative
+You're correct that a RelativeLayout is a good choice, but why did you choose this response? Give it your best guess and then see my answer in the solution video.
+
+Linear
+
+Yes, you'll need to use a RelativeLayout, and thank you for submitting your thoughts. Compare what you wrote with the answer video next!
+==========
+RelativeLayout LinearLayout - Solution
+
+Linear Layout VS Relative Layout
+
+==========
+The Drawable Folder
+
+Step2: Position the Views
+
+[]Download androidpart.jpg
+[]Move it to the drawable folder
+[]Add a TextView that says "From, YourName"
+[]Add an ImageView with the src attribute as android party
+[]Remove the default padding
+[]Click the green arrow to run your app
+==========
+Positioning - Solution
+
+layout-width
+layout-height
+textStyle
+orientation
+layout_weight
+layout_alignParentRight
+layput_alignParentLeft
+layout_alignParentBottom
+layout_toRightOf
+layout_below
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.happybirthday.MainActivity">
+
+    //Happy Birthday TextView
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy Birthday!" />
+
+    //Add a TextView that says "From, YourName"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From, MK"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+    //Add an ImageView with the src attribute as android party
+    <ImageView
+        android:src="@drawable/androidparty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+==========
+Styling
+
+Step 3: Style the Views
+
+Write down all the differences you see between what we have now and the end goal:
+
+
+
+==========
+Make the Text Larger
+
+todo:
+[]text is much larger
+[]text font is different
+[]text is white
+[]image is expanded to fill the screen
+[]text is not pushed against side of screen
+==========
+Make the Text Larger - Quiz
+
+background
+layout_width
+textStyle
+text
+textColor
+src
+scaleType
+textAlignment
+textSize
+fontFamily
+
+select the attribute(s) you need to make the text larger. Then change the text to be 36sp for both TextViews
+==========
+Setting the Font - Quiz
+
+Select the attributes you need to change the text font. Then change the text font to sans-serif-light for both TextViews
+
+==========
+Setting the Color
+
+Select the attribute(s) you need to change to change the text colorl then change the color to:
+@android:color/white for both TextViews
+
+Yes, the aptly named textColor attribute is used to change text color.
+
+==========
+Attributes for the ImageView - Quiz
+
+Select the attribute(s) you need to change to expand the image
+
+The background attribute can technically achieve the effect you're looking for by displaying an image, but we're going to use the methods discussed in class. These involve a couple other attributes.
+
+You're on the right track with scaleType, but it needs to work in conjuncture with the view's boundaries to fill the entire background.
+
+==========
+How to Style the Image
+
+scaleType
+==========
+How to Style the Image - Solution
+
+centerCrop:
+Scale the image uniformly (maintain the image's aspect ratio) so that both dimensions (width and height) of the image will be equal to or larger than the corresponding dimension of the view (minus padding).
+
+ordering
+top renders first
+a renders first
+b renders second
+c renders third
+==========
+Minor Adjustments - Quiz
+
+Select the attribute(s) you need to change to make room between the side of the phone screen and the text.
+make this space 20dp on all sides
+
+Yes, padding is one of two attributes used to make space around elements. The other is layout_margin. Margin adds space around views and padding adds space within views. Go ahead and use this attribute to make 20dp of space on all sides.
+==========
+Recap
+step1:Select the views
+step2:position the views
+step3:style the views
+
+==========
+x
+==========
+x
+==========
+x
+==========
+x
+==========
+x
+==========
+x
+==========
+x
+==========
+x
+==========
+==========
+==========
+==========
+==========
+==========
+==========
+==========
+==========
+==========
+==========
+==========
+==========

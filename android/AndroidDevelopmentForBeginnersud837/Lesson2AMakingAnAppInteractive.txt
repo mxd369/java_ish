@@ -1,0 +1,629 @@
+Lesson2A Making an App Interactive
+==============================
+Introduction to Lesson 2
+==============================
+Create a New Project
+
+create a new project and run it on your device
+application name:  Just Java
+Domain Name:       android.example.com
+Template:          'Empty Activity' template
+minimum sdk level: API 15 Android 4.0.3 Ice Cream Sandwich
+
+Correct!
+Great! Move on to start creating the JustJava app.
+==============================
+Plan How to Build the Layout: Just Java
+
+Step1: Select Views   (Which Views?)
+TextView
+NumberView
+ButtonView
+Step2: Position Views (Which ViewGroup will be root view?)
+TextView
+Step3: Style Views    (Anything we need to do here?)
+No
+
+//my guess
+Check your choice of view group.
+Remember, right now we've only learned about 2 types of view group.
+==============================
+Plan How to Build Layout - Solution
+
+Step1: Select Views   (Which Views?)
+TextView
+TextView
+ButtonView
+
+Step2: Position Views (Which ViewGroup will be root view?)
+Vertical Linear Layout as parent ViewGroup for the 3 children views
+Set Linear Layout orientation to be vertical
+
+Step3: Style Views    (Anything we need to do here?)
+QUANITY header should be all caps, add spacing between views
+Quantity value should be in black font color
+
+==============================
+Build Layout
+
+Instructor Notes
+Hint: Google search for "button android"
+Another Hint: Look at the Common Views cheat sheet
+https://s3-us-west-1.amazonaws.com/udacity-content/PDFs/Common+Android+Views+Cheat+Sheet+(1).pdf
+
+How to reformat source code
+https://www.jetbrains.com/idea/help/reformatting-source-code.html
+
+How to rearrange source code
+https://www.jetbrains.com/idea/help/rearranging-code-using-arrangement-rules.html
+
+Helpful keyboard shortcuts for Android Studio
+https://developer.android.com/sdk/installing/studio-tips.html#key-commands
+
+Hex color code for black is #000000
+
+1) Modify activity-main.xml to build this layout
+
+2) Assign the second TextView(that shows 0) a view ID name of @tid/quantity_text_view
+
+3) Run the app on your device
+
+What happens when you click on the Button?
+
+QUANTITY
+16dp
+0 (16sp black font color)
+16dp
+ORDER
+
+
+//my attempt
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.justjava.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:textAllCaps="true"
+        android:text="quantity" />
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:text="0"
+        android:textSize="16sp"
+        android:textColor="#000" />
+    <Button
+        android:id="@+id/order_button"
+        android:text="order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+Correct!
+Good job implementing the XML layout.
+==============================
+Build Layout - Solution
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+	android:orientation="vertical"
+    tools:context="com.example.android.justjava.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginBottom="16dp"
+        android:text="Quantity"
+		android:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="warp_content"
+        android:text="0"
+        android:textSize="16sp"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:text="0rder" />
+
+</LinearLayout>
+==============================
+Do Something When Button is Clicked
+
+MainActivity.java
+package com.example.android.justjava;
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.View;
+import android.widget.TextView;
+
+/**
+ * This app displays an order form to order coffee.
+ */
+public class MainActivity extends ActionBarActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    /**
+     * This method is called when the order button is clicked.
+     */
+    public void submitOrder(View view) {
+        display(1);
+    }
+
+    /**
+     * This method displays the given quantity value on the screen.
+     */
+    private void display(int number) {
+        TextView quantityTextView = (TextView) findViewById(
+                R.id.quantity_text_view);
+        quantityTextView.setText("" + number);
+    }
+}
+
+
+If you paste the code we provided and you see a line through some of the words, just ignore it for now. The code should still work perfectly!
+
+Here are the words we introduced in this video:
+
+Programming language
+Java
+Event-driven programming
+Activity
+Comments
+Package name
+Import statements
+Class name
+onCreate()
+
+
+
+SCREENS(Views)
+
+GmailApp:
+ConversationListActivity
+ComposeActivity
+
+SunShineWeatherApp:
+MainActivity
+DetailActivity
+SettingsActivity
+
+JustJava:
+MainActivity
+
+
+Java File
+MainActivity.java
+Other Files
+acitvity_main.xml
+photo.png
+sunset.jpeg
+
+
+
+Button Click
+
+1) Modify activity_main.xml to add this Button XM attribute.
+
+android:onClick = "submitOrder"
+
+2) Replace entire MainActivity.java file with the file provided in the link in instructor notes.
+
+3) run app on device.
+What happens when you click on the button?
+
+Correct!
+Yes, when you click the button, it should show the value 1.
+
+==============================
+Modifying First Lines of Java Code
+
+Instructor Notes
+
+Here are the words we introduced in this video:
+
+onClick
+Execute
+Method
+Calling
+Expressions
+You can look up their definitions in the Vocab Glossary.
+https://developers.google.com/android/for-all/vocab-words/
+
+If you want to learn more about programming with Java, feel free to check out our Java course. You won't need it to understand this Android course, but you may need it to do more advanced Android development.
+
+
+public void submitOrder(View view) {
+        display(1));
+    }
+
+
+public void submitOrder(View view) {
+        display(2);
+    }
+	
+this will change the number that is displayed when clicking the button
+==============================
+Solving Math Problems
+
+arithmetic operators
+addition +
+subtraction -
+multiplication *
+division /
+
+Display # of coffees needed if...
+There are 77 android developers who drink 2 cups each and 1 person walks in late and needs a cup too
+
+display(77 * 2) + 1;
+==============================
+Add TextViews for Price
+
+Add TextView for price $
+
+1) Add 2 TextViews to layout assign view ID (to view displaying price)
+@+id/price_text_view
+
+2) Modify MainActivity to include the new method(see link in notes)
+displayPrice(View view)
+*make sure Auto Import is on in Android Studio*
+
+3) Add another line of code in
+submitOrder(View view)
+
+example:
+display(2);
+displayPrice(2*5);
+
+
+new Method in MainActivity.java
+
+/**
+ * This method displays the given price on the screen.
+ */
+private void displayPrice(int number) {
+       TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
+       priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
+}
+
+instructor notes:
+Make sure Auto Import is on:
+
+For Windows, go to File > Settings > Editor > General > Auto Import
+For Mac, go to Android Studio > Preferences > Editor > General > Auto Import
+Check all of the following options:
+
+Show import popup
+Optimize imports on the fly
+Add unambiguous imports on the fly
+Insert imports on paste → All
+Here are the words we introduced in this video:
+
+Gist
+Snippet
+
+Correct!
+Your hard work is paying off!
+==============================
+The Need for Variables
+
+variables, int, integer
+
+a literal is a fixed value
+Using Literal:
+Quantity is:
+  2
+Price is:
+  2 * 5
+Paper cup charge is:
+  2 * 2
+
+Using Variable:
+*set numberOfCoffees to be 2
+Quantity is:
+  numberofCoffees
+Price is:
+  numberOfCoffees * 5
+Paper cup charge is:
+  numberOfCoffees * 2
+
+
+Using Variable
+  int numberOfCoffees = 2;
+  display(numberofCoffees);
+  displayPrice(numberofCoffees * 5);
+
+
+
+Instructor Notes
+Here are the words we introduced in this video:
+Variables
+Robust
+==============================
+The Need for Variables - Quiz
+
+Create and use variables
+
+1) Create an integer variable to store # of coffees
+int numberOfCoffees = 2;
+
+2) Use variable
+display(numberOfCoffees);
+display(numberOfCoffees * 5);
+
+Correct!
+Nice work. Being very careful about typing your code correctly will help you get the basics down without getting too caught up in syntax errors.
+==============================
+Add Your First Variable
+
+Declare a variable
+
+int numberOfCoffees = 2;
+
+datatype   variable name   = initial value ;
+
+
+an integer is a whole number
+
+
+Assignment operator
+"Assign value to variable"
+
+
+Instructor Notes
+
+Here are the words we introduced in this video:
+
+Data type
+int
+Variable name
+Assignment operator
+Initializing
+==============================
+Add Your First Variable - Quiz
+
+1) Create an integer variable to store # of coffees
+int numberOfCoffees = 2;
+
+2) Use variable
+display(numberOfCoffees);
+displayPrice(numberOfCoffees * 5);
+
+3) Check App
+
+4) Assign a new initial value
+int numberOfCoffees = 2;
+
+5) Assign a new variable name like quantity
+
+
+Correct!
+Sweet! Great job so far. Keep up the hard work.
+
+==============================
+Debugging a Crash
+
+Instructor Notes
+
+DDMS stands for Dalvik Debug Monitor Server, and is a tool in Android to help you debug your app. For more info, click this link.
+http://developer.android.com/tools/debugging/ddms.html
+
+Here are the words we introduced in this video:
+
+Debug
+Crashes
+Compile time error
+Runtime error
+System log
+Stacktrace
+
+
+compile time error(error that happens before app is running)
+run time error(error that happens when the app is running)
+==============================
+Debugging a Crash - Quiz
+
+1) Create a crash in your app by changing 
+submitOrder
+
+2) check the logs for the error stack trace & read the error message
+
+3) fix the error so your app works again
+
+Correct!
+Excellent work. Nobody's perfect so you're bound to write code that has an error in it at some point. Knowing how to recover and learn from the bug is an indispensable skill.
+==============================
+Chatting with Android Developer Part 1
+
+TL
+
+TechLead
+
+Adwords was the first group at google who was doing java
+all the other engineers were C++ engineers on search
+
+SREs means site reliability engineers
+==============================
+Hook Up Two Buttons
+==============================
+Hook Up Two Buttons - Quiz
+
+Instructor Notes
+
+Hint: to create the increment and decrement methods in MainActivity, copy the submitOrder method and change its name. Then modify the code inside the method to do exactly what you need.
+
+1) Modify activity_main
+  - change layout
+  - when + call 'increment'
+  - when - call 'decrement'
+2) For increment method
+  - create quantity variable and intialize to 3
+  - display quantity
+3) For decrement method
+  - create quantity variable and initialize to 1
+  - display quantity
+
+==============================
+Debug Mode in Android Studio
+
+https://developer.android.com/tools/debugging/debugging-studio.html
+
+
+1) Add red breakpoint in first line of increment & decrement methods
+2) Run in Debug Mode
+3) Step through each line of code.
+Click Play to resume execution of app
+
+Correct!
+Knowing how to run the debugger will not only help you understand how variables work, it will also help you as another tool which you can use to find logical errors in your code.
+==============================
+Update Data
+
+Updating a variable
+
+pseudocode
+
+int quantity = 2;
+quantity=3;
+quantity=4;
+quantity=5;
+==============================
+Update a Variable in the App
+
+int quantity = 2;
+quantity=3;
+quantity=4;
+quantity=5;
+
+==============================
+Update a Variable in the App - Quiz
+
+Updating a variable
+
+1) Modify the increment(1) method in the mainactivity.java file to update the quantity variable
+int quantity = 2;
+quantity = 3;
+display(quantity);
+
+2) use the debugger to step through and verify that quantity variable is updated as expected
+
+3) repeat above steps for the decrement() method. Initialize quantity to 2, then update the 1 cup of coffee
+
+Correct!
+Yeah! Modify those variables!
+==============================
+Update Quantity Variable
+
+Pseudocode:
+create quantity variable, set it to 2
+Java Code:
+int quantity = 2;
+
+Pseudocode:
+take current quantity value, add 1, and make that the new quantity value
+Java Code:
+quantity = quantity + 1;
+
+Pseudocode:
+Take current quantity value add 1, and make that the new quantity value
+Java Code:
+quantity = quantity +1;
+
+==============================
+Update Quantity Variable
+
+int quantity + 2;         //2
+quantity = quantity + 1;  //3
+quantity = quantity + 1;  //4
+quantity = quantity + 1;  //5
+
+==============================
+Update Quantity Variable - Solution
+
+Instructor Notes
+
+Here are the words we introduced in this video:
+
+Variable declaration
+==============================
+Modify the increment() Method
+
+increment method
+
+1)
+modify the increment() method in the MainActivity.java file to update the quantity variable
+
+int quantity = 2;
+quantity = quantity + 1;
+display(quantity);
+
+2) use the debugger to step through and verify that quantity variable is updated as expected
+
+3) experiment with updating the quantity variable with other expressions like quantity = 2 * quantity; //then rever code back
+==============================
+Modify the decrement() Method
+
+==============================
+Make the Quantity Picker Work
+
+for:
+
+Variable scope
+Local variables
+Global variable
+Variable declaration
+==============================
+Make the Quantity Picker Work - Quiz
+
+Create a global variable
+
+1) Replace 2 local quantity variables with 1 global quantity variable
+2) use the debugger to verify that quantity variable is updated as expected
+3) experiment. try different initial quantity value like 0. Or try doubling or halving quantity each time + or - is clicked
+==============================
+Fix the Order Button
+
+
+==============================
+==============================
+==============================
+==============================
+==============================
+==============================
+==============================
+==============================
+==============================
+==============================

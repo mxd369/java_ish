@@ -1,0 +1,329 @@
+============================Defining Vs Calling a Method
+JustJava
+
+MainActivity.java
+
+defining a method
+
+change name of display method to displayQuantity
+
+    private void displayQuantity(int number) {
+        TextView quantityTextView = (TextView) findViewById(
+                R.id.quantity_text_view);
+        quantityTextView.setText("" + number);
+    }
+
+calling a method
+
+Does this need to change too? Yes
+
+    public void increment(View view) {
+        quantity = quantity + 1;
+        displayQuantity(quantity);
+    }
+
+    /**
+     * This method is called when the increment button(+) is clicked
+     */
+    public void decrement(View view) {
+        quantity = quantity - 1;
+        displayQuantity(quantity);
+    }
+
+============================Calculate Price Method
+input:  zero or more input parameters (quantity   )
+output: zero or one return value      (total price)
+
+Submit Order(...){
+
+   calculatePrice(...){
+      ...
+   }
+}
+
+Calculate Price Method:
+
+https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html
+
+============================Define a Method
+private int calculatePrice(int quantity) {
+}
+
+access modifier: private    (who has access to this method)
+return data type: int       (type of data returned in the output)
+method name: calculatePrice 
+parameters: (int quantity)  (input parameters)
+
+quantity priceofonecup (parameter1datatype parameter1variablename, parameter2datatype parameter2variablename) {
+    .....
+}
+
+============================Inputs to a Methods
+https://docs.oracle.com/javase/tutorial/java/javaOO/arguments.html
+
+Inputs to a Method
+
+Input Parameters
+the inputs pass to a emthod can be called arguments
+
+============================Add or Remove Parameters
+/**
+     * This method is called when the order button is clicked.
+     */
+    public void submitOrder(View view) {
+        displayPrice(quantity * 5);
+        String priceMessage = "Total: $" + price;
+        priceMessage = priceMessage + "\nThank You!";
+        displayMessage(priceMessage);
+
+        calculatePrice(quantity);
+
+    }
+
+    /**
+     *  Calculate Price Method
+     *
+     *  Calculates the price of the order.
+     *
+     *  @param quantity is the number of cups of coffee ordered
+     */
+
+    private void calculatePrice(int quantity) {
+        int price = quantity * 5;
+    }
+============================Output from a Method
+https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html
+
+return;
+
+public int getArea() {
+    return width * height;
+}
+
+void means theres not return value
+
+============================Use Return Value from Method
+Pseudocode
+in submitOrder method:
+
+1. Call calculatePrice method and store output in integer variable called price
+2. Display price of screen
+
+,
+
+Java Code
+//in submitOrder method:
+int price = calculatePrice();
+displayPrice(price);
+
+============================Resources
+`
+http://developer.android.com/guide/topics/resources/accessing-resources.html
+http://developer.android.com/guide/practices/screens_support.html
+http://developer.android.com/guide/topics/resources/providing-resources.html
+============================From XML to Java
+What's happening between XML & Java
+
+file(justjava) -> main activity initialized ->
+mainactivity
+on Create(...){
+    setContentView(R.layout.activity_main);
+}
+-> activity_main XML
+<LinearLayout...
+  <TextView...
+  <LinearLayout...
+    <Button...
+	<TextView...
+	<Button...
+
+	
+Build Hierarchy of Java Objects
+  LinearLayout
+  TextView   LinearLayout
+             button Textfield button
+
+============================What are Java Objects
+Today
+State
+TextView
+
+Methods
+setText()
+getText()
+onDraw()
+
+https://docs.oracle.com/javase/tutorial/java/concepts/class.html
+https://gist.github.com/udacityandroid/47592c621d32450d7dbc
+https://gist.github.com/udacityandroid/bd550cc8fd37190d85a6
+https://android.googlesource.com/platform/frameworks/base/+/refs/heads/master/core/java/android/widget/TextView.java
+https://android.googlesource.com/platform/frameworks/base/+/refs/heads/master/core/java/android/widget/ImageView.java
+
+Class VS Instance
+
+TextView Class
+  class Textview
+  
+  state
+  
+  methods
+
+TextView object instances
+TextView
+TextView
+TextView
+============================What is a Java Class
+/**
+ * Displays text to the user
+ */
+public class TextView extends View {
+    // String value
+	private String mText;
+	// Text color of the text
+	private int mTextColor;
+
+}
+
+,
+
+ImageView.java
+public class ImageView extends View {
+    ...
+	
+	...
+}
+https://plus.google.com/+AndroidDevelopers/posts/1EyxkFnPjmD
+http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.1.0_r1/android/widget/TextView.java#TextView
+============================Create an Object
+Create Object With Constructor
+ObjectDataType VariableName  =  new objectDataType (Input Args);
+
+TextView priceTextView    = new TextView(context);
+ImageView coffeeImageView = new ImageView(context);
+Button submitOrdeButton   = new Button(context);
+CatView sleepyCatView     = new CatView("Tiger");
+
+Create Object with Factory Methods
+
+objectDataType variableName = ObjectDataType.FactoryMethodName(InputArguments);
+
+MediaPlayer player = MediaPlayer.create(context, R.raw.song);
+Toast toastMessage = Toast.makeText(context, "Hi", duration);
+============================Create and Object QUIZ
+1 TextView = new TextView(context);
+TextView variableName = new TextView(context);
+
+2 image view img = newImageView(context);
+ImageView img = new ImageView(context);
+
+3 ToggleButton button = create ToggleButton(context);
+ToggleButton button = new ToggleButton(context);
+
+4 Toast toast = toast.makeText(context, text, duration);
+Toast toast = Toast.makeText(context, text, duration);
+
+============================Call Methods on Object
+objectVariableName.methodName(inputArguments);
+
+titleTextView.setText("News");
+titleTextView.setTextSize(18);
+warningTextView.setTextColor(Color.RED);
+welcomeImageView.setImageResource(R.drawable.cloud);
+
+============================Practice calling object methods
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstancesState);
+	
+	TextView textView = new TextView(this);
+	textView.setText("Wow!");
+	textView.setTextSize(56);
+	textView.setTextColor(Color.GREEN);
+	textView.setMaxLines(2);
+	
+	setContentView(textView);
+	
+}
+============================Inheriting Behavior
+Inhertance
+AppCompatActivity
+Class Inheritance
+
+class MainActivity extends
+    
+	AppCompatActivity {
+  
+  state from AppCompatActivity
+  
+  method1() {
+     ....
+  }
+  method2() {
+     ....
+  }
+  method from AppCompatActivity {
+     ....
+  }
+  method from AppCompatActivity {
+     ....
+  }
+  @override
+  method from ApCompatActivity {
+     ....
+  }
+}
+
+
+/*
+IMPORTANT - The activity templates have been updated in Android Studio Version 1.4. If you are using this version or newer, please select the "Empty" activity template (instead of the Blank Activity), which will generate files that best match the content in this video.
+*/
+
+Class Hierarchy
+
+AppCompatActivity
+  (SuperClass)
+  |           \
+MainActivity   DetailActivity
+(subclass)     (subclass)
+============================Class Inheritance
+How to connect the views together? 
+class TextView
+  extends View {
+       ....  
+}
+
+View.java
+TextView.java   ImageView.java   Button.java
+
+
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================
+============================

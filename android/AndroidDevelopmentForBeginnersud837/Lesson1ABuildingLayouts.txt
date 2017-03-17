@@ -1,0 +1,134 @@
+developer.android.com/index.html
+
+https://developers.google.com/android/for-all/vocab-words/
+
+Views
+
+Camel case is a convention that is not limited to programming. If you've ever used FedEx, listened to an iPod, created a PowerPoint, or eaten at McDonalds, you've encountered camel case!
+
+We used a lot of new words in this video!
+
+Layout
+User Interface
+TextView
+ImageView
+Button
+Camel case
+
+Here are the words we introduced in this video:
+
+Integrated development environment
+Code
+XML
+
+Textview
+<TextView
+    android:text="Happy Birthday!"
+	android:background="@android:color/darker_gray"
+	android:layout_width="150dp"
+	android:layout_height="75dp"  />
+
+1. whats the name of the xml element?
+TextView
+
+2. List all attribute names(not attribute values)
+android:text, android:textColor, android:background, android:layout_width, android:layout_height
+
+3. tag is closed on line 6
+
+XML Syntax
+linear layout
+
+<linearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="Wrap_content"
+    android:orientation="vertical">
+	
+	<TextView
+	    android:text="Happy Birthday"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+		
+	<TextView
+	    android:text="You're the best!"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+
+Attribute Name | Attribute Value in Quotation
+has default values
+
+Attributes:
+width
+height
+background
+text
+black hair
+brown eyes
+
+
+http://labs.udacity.com/android-visualizer/#/android/text-view
+
+
+What does Density Independent Pixel actually mean? You might be familiar with a pixel, which is a small illuminated area on a screen. Screens are essentially made up of hundreds of thousands of these pixels.
+
+So what is a "density independent" pixel? Well, better screens will often have more pixels in the same amount of space. The number of pixels in a fixed space is known as the screen's pixel density.
+
+
+http://www.google.com/design/spec/style/typography.html#typography-styles
+
+
+<TextView
+    android:text="Middle Level Chest Flies Using Elastic Bands for resistence"
+    android:background="#039BE5"
+    android:textColor="#E0F2F1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp" />
+	
+http://www.google.com/design/spec/style/color.html#color-color-palette
+
+Simple ImageView
+
+<ImageView
+    android:src="@drawable/cake"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scaleType="centerCrop"/>
+
+
+
+<ImageView
+    android:src="@drawable/ocean"
+    android:layout_width="700dp"
+    android:layout_height="400dp"
+    android:scaleType="centerCrop"/>
+
+
+
+Documentation
+  Google search for "textview android"
+  http://developer.android.com/reference/android/widget/TextView.html
+  Use find feature to search for the XML attribute that makes textview bold or italic
+  
+<TextView
+    android:text="Oh the possibilities of TextView!"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="36sp"
+    android:textStyle="bold"
+    android:textStyle="italic"
+    />
+
+
+http://www.google.com/design/spec/material-design/introduction.html
+
+
+
+
+
+
+
+
